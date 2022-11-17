@@ -23,19 +23,19 @@ The Node.js project uses an [open governance model](./GOVERNANCE.md). The
 
 * [Support](#support)
 * [Release types](#release-types)
-  * [Download](#download)
-    * [Current and LTS releases](#current-and-lts-releases)
-    * [Nightly releases](#nightly-releases)
-    * [API documentation](#api-documentation)
-  * [Verifying binaries](#verifying-binaries)
+    * [Download](#download)
+        * [Current and LTS releases](#current-and-lts-releases)
+        * [Nightly releases](#nightly-releases)
+        * [API documentation](#api-documentation)
+    * [Verifying binaries](#verifying-binaries)
 * [Building Node.js](#building-nodejs)
 * [Security](#security)
 * [Contributing to Node.js](#contributing-to-nodejs)
 * [Current project team members](#current-project-team-members)
-  * [TSC (Technical Steering Committee)](#tsc-technical-steering-committee)
-  * [Collaborators](#collaborators)
-  * [Triagers](#triagers)
-  * [Release keys](#release-keys)
+    * [TSC (Technical Steering Committee)](#tsc-technical-steering-committee)
+    * [Collaborators](#collaborators)
+    * [Triagers](#triagers)
+    * [Release keys](#release-keys)
 * [License](#license)
 
 ## Support
@@ -743,31 +743,37 @@ releases on a rotation basis as outlined in the
 [security release process](./doc/contributing/security-release-process.md).
 
 * Datadog
-  * [bengl](https://github.com/bengl) -
-    **Bryan English** <<bryan@bryanenglish.com>> (he/him)
-  * [vdeturckheim](https://github.com/vdeturckheim) -
-    **Vladimir de Turckheim** <<vlad2t@hotmail.com>> (he/him)
+    * [bengl](https://github.com/bengl) -
+      **Bryan English** <<bryan@bryanenglish.com>> (he/him)
+    * [vdeturckheim](https://github.com/vdeturckheim) -
+      **Vladimir de Turckheim** <<vlad2t@hotmail.com>> (he/him)
 * NearForm
-  * [mcollina](https://github.com/mcollina) -
-    **Matteo Collina** <<matteo.collina@gmail.com>> (he/him)
+    * [mcollina](https://github.com/mcollina) -
+      **Matteo Collina** <<matteo.collina@gmail.com>> (he/him)
 * Red Hat and IBM
-  * [joesepi](https://github.com/joesepi) -
-    **Joe Sepi** <<joesepi@ibm.com>> (he/him)
-  * [mhdawson](https://github.com/mhdawson) -
-    **Michael Dawson** <<midawson@redhat.com>> (he/him)
+    * [joesepi](https://github.com/joesepi) -
+      **Joe Sepi** <<joesepi@ibm.com>> (he/him)
+    * [mhdawson](https://github.com/mhdawson) -
+      **Michael Dawson** <<midawson@redhat.com>> (he/him)
 
 ## License
 
 Node.js is available under the
 [MIT license](https://opensource.org/licenses/MIT). Node.js also includes
-external libraries that are available under a variety of licenses.  See
+external libraries that are available under a variety of licenses. See
 [LICENSE](https://github.com/nodejs/node/blob/HEAD/LICENSE) for the full
 license text.
 
 [Code of Conduct]: https://github.com/nodejs/admin/blob/HEAD/CODE_OF_CONDUCT.md
+
 [Contributing to the project]: CONTRIBUTING.md
+
 [Node.js website]: https://nodejs.org/
+
 [OpenJS Foundation]: https://openjsf.org/
+
 [Strategic initiatives]: doc/contributing/strategic-initiatives.md
+
 [Technical values and prioritization]: doc/contributing/technical-values.md
+
 [Working Groups]: https://github.com/nodejs/TSC/blob/HEAD/WORKING_GROUPS.md

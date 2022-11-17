@@ -12,14 +12,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class TestServlet06 extends HttpServlet {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -5682475838538568444L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = -5682475838538568444L;
 
-	/**
-	 * 相对路径
-	 */
+    /**
+     * 相对路径
+     */
 //	public void doGet(HttpServletRequest request,
 //      HttpServletResponse response)throws ServletException, IOException {
 //		ServletContext context = this.getServletContext();
@@ -32,24 +32,25 @@ public class TestServlet06 extends HttpServlet {
 //			out.println("Company=" + pros.getProperty("Company") + "<br>");
 //			out.println("Address=" + pros.getProperty("Address") + "<br>");
 //	}
-	/**
-	 * 绝对路径
-	 */
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		PrintWriter out = response.getWriter();
-		ServletContext context = this.getServletContext();
-		// 获取文件绝对路径
-		String path = context.getRealPath("/WEB-INF/classes/itcast.properties");
-		FileInputStream in = new FileInputStream(path);
-		Properties pros = new Properties();
-		pros.load(in);
-		out.println("Company=" + pros.getProperty("Company") + "<br>");
-		out.println("Address=" + pros.getProperty("Address") + "<br>");
-	}
 
-	@Override
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		this.doGet(request, response);
-	}
+    /**
+     * 绝对路径
+     */
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        ServletContext context = this.getServletContext();
+        // 获取文件绝对路径
+        String path = context.getRealPath("/WEB-INF/classes/itcast.properties");
+        FileInputStream in = new FileInputStream(path);
+        Properties pros = new Properties();
+        pros.load(in);
+        out.println("Company=" + pros.getProperty("Company") + "<br>");
+        out.println("Address=" + pros.getProperty("Address") + "<br>");
+    }
+
+    @Override
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.doGet(request, response);
+    }
 }
