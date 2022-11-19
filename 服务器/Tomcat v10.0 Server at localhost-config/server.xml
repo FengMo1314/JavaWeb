@@ -136,7 +136,7 @@
 
                 <Context docBase="chapter03" path="/chapter03" reloadable="true" source="org.eclipse.jst.jee.server:chapter03"/>
                 <Context docBase="MyWeb" path="/MyWeb" reloadable="true" source="org.eclipse.jst.jee.server:MyWeb"/>
-            <Context docBase="JavaWeb&amp;chen" path="/JavaWeb" reloadable="true" source="org.eclipse.jst.jee.server:JavaWeb&amp;chen"/></Host>
+            <Context docBase="JavaWeb&amp;chen" path="/LH.show" reloadable="true" source="org.eclipse.jst.jee.server:JavaWeb&amp;chen"/></Host>
         </Engine>
     </Service>
 </Server>
