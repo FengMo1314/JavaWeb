@@ -1,60 +1,70 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*"%>
+<%!
+%>
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="Shortcut Icon" href="imgs/index/favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" href="imgs/index/favicon.ico"
+	type="image/x-icon" />
 <link rel="stylesheet" href="css/index/index.css">
 <title>Liu He's private service</title>
 </head>
 <body>
-<%
-String ip=request.getRemoteAddr();
-%>
+
+	<%
+	String ip = request.getRemoteAddr();
+	%>
 	<div class="box">
 		<img alt="完了" src="imgs/index/index.png">
-		<h1>欢迎<%=ip%>来此</h1>
+		<h1>
+			欢迎<%=ip%>来此
+		</h1>
+		<h3>
+			现在是<%=(new java.util.Date()).toLocaleString()%>
+		</h3>
 		<h3>柳和</h3>
 		<form action="">
 			<table>
-			<tr align="center" style="color: red">
-			<td>编号</td>
-			<td>内容</td>
-			<td>时间</td>
-			</tr>
-			<tr align="center">
-			<td>01</td>
-			<td><a href="day01">day01</a></td>
-			<td>2022-11-17</td>
-			</tr>
-			<tr align="center">
-			<td>02</td>
-			<td>
-			<h5>
-			<a href="day02">demo</a>
-			</h5>
-			<h5>
-			<a href="day02-1">demo1</a>
-			</h5>
-			<h5>
-			<a href="html/demo.html">demo2</a>
-			</h5>
-			<h5>
-			<a href="day02-3">demo3</a>
-			</h5>
-			<h5>
-			<a href="day02-4">demo4</a>
-			</h5>
-			<h5>
-			<a href="day02-5">demo5</a>
-			</h5>
-			<h5>
-			<a href="day02-6">demo6</a>
-			</h5>
-			</td>
-			<td>2022-11-20</td>
-			</tr>
-			<%--
+				<tr align="center" style="color: red">
+					<td>编号</td>
+					<td>内容</td>
+					<td>时间</td>
+				</tr>
+				<tr align="center">
+					<td>01</td>
+					<td><a href="day01">day01</a></td>
+					<td>2022-11-17</td>
+				</tr>
+				<tr align="center">
+					<td>02</td>
+					<td>
+						<h5>
+							<a href="day02">demo</a>
+						</h5>
+						<h5>
+							<a href="day02-1">demo1</a>
+						</h5>
+						<h5>
+							<a href="html/demo.html">demo2</a>
+						</h5>
+						<h5>
+							<a href="day02-3">demo3</a>
+						</h5>
+						<h5>
+							<a href="day02-4">demo4</a>
+						</h5>
+						<h5>
+							<a href="day02-5">demo5</a>
+						</h5>
+						<h5>
+							<a href="day02-6">demo6</a>
+						</h5>
+					</td>
+					<td>2022-11-20</td>
+				</tr>
+				<%--
 			<tr align="center">
 			<td>03</td>
 			<td><a href="day03">day03</a></td>
