@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>请输入数字</h1>
-<form action="${pageContext.request.contextPath}/guessControl" method="get">
+<form action="${pageContext.request.contextPath}/guessControl" method="post">
     <input type="text" name="guess">
     <input type="submit" value="提交">
 </form>
