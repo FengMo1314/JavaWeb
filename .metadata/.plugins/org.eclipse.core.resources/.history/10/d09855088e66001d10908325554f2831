@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package demo1;
+
+/**
+ * @author LiuHe
+ *
+ */
+//@WebServlet(name = "HelloWolrdServelet")
+public class HelloWolrdServelet extends GenericServlet {
+
+
+}

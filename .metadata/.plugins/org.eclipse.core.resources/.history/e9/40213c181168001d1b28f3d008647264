@@ -1,0 +1,4 @@
+@charset "UTF-8";
+img{
+	margin:80px
+}

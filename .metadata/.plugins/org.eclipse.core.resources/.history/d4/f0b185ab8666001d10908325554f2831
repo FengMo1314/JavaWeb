@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package demo1;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+
+/**
+ * @author LiuHe
+ *
+ */
+public class HelloWolrdServelet extends GenericServlet {
+
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws IOException, ServletException {
+
+        res.setContentType("text/html");
+
+        PrintWriter out = res.getWriter();
+        out.print("<html><body>");
+        out.print("<div style=\"text-align:center;\"><h2>hello generic servlet</h2></div>");
+        out.print("</body></html>");
+
+    }
+
+
+
+	
+
+}

@@ -1,0 +1,51 @@
+/**
+ * 
+ */
+package day02;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.http.HttpHeaders;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * @author LiuHe
+ *
+ */
+public class Demo1 extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7273002642778684255L;
+
+	/**
+	 * 
+	 */
+	public Demo1() {
+		// TODO 自动生成的构造函数存根
+	}
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO 自动生成的方法存根
+		this.doPost(req, resp);
+		PrintWriter out = resp.getWriter();
+		out.print("欢迎"+getRemortIP(req)+"到来");
+	}
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO 自动生成的方法存根
+		super.doPost(req, resp);
+	}
+	public String getRemortIP(HttpServletRequest request) {
+		if(request.getHeader("x-forwarded-for")==null) {
+			return request.getRemoteAddr(); 
+		};
+		return request.getHeader("x-forwarded-for");
+	} 
+
+}

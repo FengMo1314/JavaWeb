@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/index/index.css">
+<title>liuhe.com</title>
+</head>
+<body>
+	<div class="box">
+		<img alt="完了" src="imgs/index/index.png">
+		<h1>欢迎来此</h1>
+		<form action="">
+			<ul>
+				<li><a href="/lh.com">javaweb</a></li>
+				<li><a href="../../MyWeb/MyApp/response/togo.html">MyWeb</a></li>
+			</ul>
+		</form>
+	</div>
+</body>
+</html>

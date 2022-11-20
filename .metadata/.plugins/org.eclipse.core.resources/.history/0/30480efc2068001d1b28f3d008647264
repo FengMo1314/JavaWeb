@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package day02;
+
+import jakarta.servlet.http.HttpServlet;
+
+/**
+ * @author LiuHe
+ *
+ */
+public class Demo1 extends HttpServlet {
+
+	/**
+	 * 
+	 */
+	public Demo1() {
+		// TODO 自动生成的构造函数存根
+	}
+
+}

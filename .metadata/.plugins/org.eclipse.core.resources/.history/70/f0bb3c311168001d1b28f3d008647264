@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="<%= BASE_URL %>index.css">
+<title>liuhe.com</title>
+</head>
+<body>
+<div>
+<img alt="完了" src="imgs/index/index.png">
+<h1>欢迎来此</h1>
+<a href="https://baike.baidu.com/item/html/97049">地点</a>
+</div>
+</body>
+</html>
