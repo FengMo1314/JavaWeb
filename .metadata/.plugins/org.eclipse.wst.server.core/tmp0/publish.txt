@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Sun Nov 20 23:15:34 CST 2022
+#Tue Nov 22 21:57:03 HKT 2022
 org.eclipse.jst.jee.server\:chapter03=D\:\\MyStockpileFile\\WindowsApplication\\JavaWeb\\Tool\\Apache_Tomcat\\apache-tomcat-10.0.26-windows-x64\\apache-tomcat-10.0.26\\webapps\\chapter03
 org.eclipse.jst.jee.server\:JavaWeb&chen=D\:\\MyStockpileFile\\WindowsApplication\\JavaWeb\\Tool\\Apache_Tomcat\\apache-tomcat-10.0.26-windows-x64\\apache-tomcat-10.0.26\\webapps\\JavaWeb&chen
 org.eclipse.jst.jee.server\:MyWeb=D\:\\MyStockpileFile\\WindowsApplication\\JavaWeb\\Tool\\Apache_Tomcat\\apache-tomcat-10.0.26-windows-x64\\apache-tomcat-10.0.26\\webapps\\MyWeb

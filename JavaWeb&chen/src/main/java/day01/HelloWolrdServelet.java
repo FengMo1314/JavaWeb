@@ -1,32 +1,44 @@
 package day01;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
-import jakarta.servlet.GenericServlet;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 
-public class HelloWolrdServelet extends GenericServlet {
+public class HelloWolrdServelet implements Servlet{
 
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 1L;
-	int sum=0;
-	public HelloWolrdServelet() {
-		// TODO 自动生成的构造函数存根
+	@Override
+	public void destroy() {
+		// TODO 自动生成的方法存根
+		System.out.println("Servlet正在销毁");
+
+	}
+
+	@Override
+	public ServletConfig getServletConfig() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public String getServletInfo() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO 自动生成的方法存根
+		 System.out.println("Servlet正在初始化");
 	}
 
 	@Override
 	public void service(ServletRequest arg0, ServletResponse arg1) throws ServletException, IOException {
 		// TODO 自动生成的方法存根
-		PrintWriter out = arg1.getWriter();
-		out.println("Hellow Wolld");
-		sum++;
-		System.out.println("Hello Wolld!"+sum);
+		//专门向客服端提供响应的方法
+        System.out.println("Servlet正在提供服务");
 	}
-
 
 }

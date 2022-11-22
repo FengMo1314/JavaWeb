@@ -4,19 +4,25 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <!-- 配置实现类HelloWolrdServelet.java-->
   <servlet>
-    <servlet-name>HelloWolrdServelet</servlet-name>
+  <!-- 添加实现类的类名——只是类名！！不要扩展名(.java)!!!!-->
+   <!--  <servlet-name>HelloWolrdServelet</servlet-name>-->
+    <servlet-name>Servelet</servlet-name>
+    <!-- 添加实现类的位置(所属包结构位置)-->
+    <!-- 格式——工程根目录下的!自建包!开始每个层级之间用(英文状态下的)"."(句号)隔开-->
     <servlet-class>day01.HelloWolrdServelet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>HelloWolrdServelet</servlet-name>
+   <!-- <servlet-name>HelloWolrdServelet</servlet-name>-->
+     <servlet-name>Servelet</servlet-name>
     <url-pattern>/day01</url-pattern>
   </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>Demo</display-name>
