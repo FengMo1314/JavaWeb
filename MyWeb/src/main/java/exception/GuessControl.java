@@ -57,6 +57,7 @@ public class GuessControl extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+	System.out.println("猜数字提交给了post");
 	}
 
 }

@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
 locationorg.eclipse.jst.server.tomcat.runtime.100=D\:/MyStockpileFile/WindowsApplication/JavaWeb/Tool/Apache_Tomcat/apache-tomcat-10.0.26-windows-x64/apache-tomcat-10.0.26
+locationorg.eclipse.jst.server.tomcat.runtime.85=D\:/MyStockpileFile/WindowsApplication/JavaWeb/Tool/Apache_Tomcat/apache-tomcat-8.5.83-windows-x64/apache-tomcat-8.5.83
+locationorg.eclipse.jst.server.tomcat.runtime.90=D\:/MyStockpileFile/WindowsApplication/JavaWeb/Tool/Apache_Tomcat/apache-tomcat-9.0.55-windows-x64/apache-tomcat-9.0.55

@@ -10,13 +10,13 @@
 </head>
 <body>
 <h1>请输入数字</h1>
-<form action="${pageContext.request.contextPath}/guessControl" method="post">
+<form action="../../guessControl" method="post">
     <input type="text" name="guess">
     <input type="submit" value="提交">
 </form>
 <%
     Random r = new Random();
-    int nub = r.nextInt(10);
+    int nub = r.nextInt(10)+1;
     session.setAttribute("nub", nub);
 %>
 </body>

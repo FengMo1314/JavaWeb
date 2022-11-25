@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*"%>
-<%!
-%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -64,12 +62,19 @@
 					</td>
 					<td>2022-11-20</td>
 				</tr>
+				<tr align="center">
+					<td>03</td>
+					<td>
+						<h5>
+							<a href="html/day03.html">day03</a>
+						</h5>
+						<h5>
+							<a href="html/index">day03-1</a>
+						</h5>
+					</td>
+					<td>2022-11-24</td>
+				</tr>
 				<%--
-			<tr align="center">
-			<td>03</td>
-			<td><a href="day03">day03</a></td>
-			<td>2022-12-12</td>
-			</tr>
 			<tr align="center">
 			<td>04</td>
 			<td><a href="day04">day04</a></td>
