@@ -17,7 +17,7 @@ public class GetLocalIp extends HttpServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public static String getLocalIp(HttpServletRequest request) {
+	public static  String getLocalIp(HttpServletRequest request) {
 		// TODO 自动生成的构造函数存根
 		request.getLocalAddr();
 		String ip = request.getHeader("x-forwarded-for");

@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 public class Demo2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -26,12 +26,13 @@ public class Demo2 extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html; charset=UTF-8");
 		 ServletContext content = getServletContext();
-         
-		String name=(String) content.getAttribute("username");
+
+		String name=(String) content.getAttribute("name");
 //		String pass=request.getParameter("pass");
 		PrintWriter out = response.getWriter();
 		out.print("<h1>欢迎:"+name+"</h1>");
@@ -40,6 +41,7 @@ public class Demo2 extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

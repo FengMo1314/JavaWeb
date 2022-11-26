@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.*"%>
+<%@ page import="java.io.*,java.util.*,ip.GetLocalIp"%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 <body>
 
 	<%
-	String ip = request.getRemoteAddr();
+	String ip = GetLocalIp.getLocalIp(request);
 	%>
 	<div class="box">
 		<img alt="完了" src="imgs/index/index.png">
@@ -69,7 +69,10 @@
 							<a href="html/day03.html">day03</a>
 						</h5>
 						<h5>
-							<a href="html/index">day03-1</a>
+							<a href="html/login.html">day03-1</a>
+						</h5>
+						<h5>
+							<a href="html/regist.html">day03-2</a>
 						</h5>
 					</td>
 					<td>2022-11-24</td>

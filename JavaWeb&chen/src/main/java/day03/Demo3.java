@@ -1,19 +1,19 @@
 package day03;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
  * Servlet implementation class Demo3
  */
 public class Demo3 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -25,14 +25,29 @@ public class Demo3 extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setContentType("text/html; charset=UTF-8");
+		String name=request.getParameter("username");
+		PrintWriter out = response.getWriter();
+		out.print("<h1>name:"+name+"</h1>");
+//		try {
+//			wait(10);
+//		} catch (InterruptedException e) {
+//			// TODO 自动生成的 catch 块
+//			e.printStackTrace();
+//		}finally {
+			response.sendRedirect("./html/login.html");
+//		}
 		
+
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

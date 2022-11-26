@@ -37,4 +37,5 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="index.SQLBean"/>
     <fullyQualifiedTypeName name="day03.Islogin"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
 </qualifiedTypeNameHistroy>
