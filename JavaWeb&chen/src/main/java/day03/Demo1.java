@@ -42,10 +42,12 @@ public class Demo1 extends HttpServlet {
 			ServletContext content=getServletContext();
 			System.out.print("用户名："+name+"密码："+pass);
 			content.setAttribute("name", name);
+			out.print("正确——稍等1秒跳转");
 			response.sendRedirect("./day03-2");
-//			request.getRequestDispatcher("./day03-2").forward(request, response);
+//				request.getRequestDispatcher("./day03-2").forward(request, response);
+			
 		}else {
-			System.out.print("用户名或者密码错误");
+			out.print("用户名或者密码错误");
 			response.sendRedirect("./html/login.html");
 		}
 	}

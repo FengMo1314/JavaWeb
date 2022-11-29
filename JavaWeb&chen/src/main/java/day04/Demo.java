@@ -1,25 +1,22 @@
-package day02;
+package day04;
 
-import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
- * Servlet implementation class Demo3
+ * Servlet implementation class Demo1
  */
-@WebServlet("/d2-3")
-public class Demo3 extends HttpServlet {
+public class Demo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Demo3() {
+    public Demo() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -29,17 +26,7 @@ public class Demo3 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-//		out.println("get");
-		ServletConfig sconfig = getServletConfig();
-//		String name=sconfig.getServletName();
-//		out.print(name);
-		String name=sconfig.getInitParameter("user");
-		out.print("name:"+name);
-		String password=sconfig.getInitParameter("password");
-		out.print("\npassword"+password);
-//		append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**

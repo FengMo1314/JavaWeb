@@ -131,13 +131,22 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>Demo3</display-name>
-    <servlet-name>Demo3</servlet-name>
+    <display-name>day03-Demo3</display-name>
+    <servlet-name>day03-Demo3</servlet-name>
     <servlet-class>day03.Demo3</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Demo3</servlet-name>
+    <servlet-name>day03-Demo3</servlet-name>
     <url-pattern>/day03-3</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <display-name>day04</display-name>
+    <servlet-name>day04</servlet-name>
+    <servlet-class>day04.Demo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>day04</servlet-name>
+    <url-pattern>/day04</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.io.*,java.util.*,ip.GetLocalIp"%>
+<%@ page import="java.io.*,java.util.*,ip.GetLocalIp,java.util.Date"%>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -15,14 +15,16 @@
 	String ip = GetLocalIp.getLocalIp(request);
 	%>
 	<div class="box">
+	<form name=clock>
 		<img alt="完了" src="imgs/index/index.png">
 		<h1>
 			欢迎<%=ip%>来此
 		</h1>
 		<h3>
-			现在是<%=(new java.util.Date()).toLocaleString()%>
+			现在是<% %>
 		</h3>
 		<h3>柳和</h3>
+		</form>
 		<form action="">
 			<table>
 				<tr align="center" style="color: red">
