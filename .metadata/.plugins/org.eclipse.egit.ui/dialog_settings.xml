@@ -9,7 +9,7 @@
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="716,283"/>
-		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="758,241"/>
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
@@ -24,5 +24,14 @@
 			<item value="600"/>
 			<item value="400"/>
 		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="737"/>
+		<item key="DIALOG_Y_ORIGIN" value="321"/>
+		<item key="DIALOG_WIDTH" value="788"/>
+		<item key="DIALOG_HEIGHT" value="531"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+	<section name="FetchGerritChangePage">
 	</section>
 </section>
