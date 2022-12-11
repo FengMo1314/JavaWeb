@@ -1,14 +1,14 @@
 package day02;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * Servlet implementation class Demo3
@@ -27,7 +27,7 @@ public class Demo3 extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
+	 * response)
 	 */
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -52,7 +52,7 @@ public class Demo3 extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
-	 *      response)
+	 * response)
 	 */
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

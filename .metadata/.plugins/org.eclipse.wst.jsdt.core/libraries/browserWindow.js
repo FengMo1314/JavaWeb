@@ -10,6 +10,7 @@
  *******************************************************************************/
 function BarProp() {
 }
+
 BarProp.prototype = [];
 
 /**
@@ -20,6 +21,7 @@ BarProp.prototype = [];
  */
 function Window() {
 }
+
 Window.prototype = new EventTarget();
 Window.prototype.self = new Window();
 Window.prototype.window = new Window();
@@ -397,6 +399,7 @@ Window.prototype.scroll = function (pixelX, pixelY) {
  */
 function History() {
 }
+
 History.prototype = {};
 History.prototype.history = new History();
 /**
@@ -433,6 +436,7 @@ History.prototype.go = function (arg) {
  */
 function Location() {
 }
+
 Location.prototype = {};
 Location.prototype.location = new Location();
 /**
@@ -513,6 +517,7 @@ Location.prototype.replace = function (arg) {
  */
 function Navigator() {
 }
+
 Navigator.prototype = {};
 Navigator.prototype.navigator = new Navigator();
 /**
@@ -580,6 +585,7 @@ Navigator.prototype.javaEnabled = function () {
  */
 function Screen() {
 }
+
 Screen.prototype = {};
 Screen.prototype.screen = new Screen();
 /**
@@ -642,6 +648,7 @@ Event.prototype.initEvent = function (eventTypeArg,
 
 function EventListener() {
 }
+
 EventListener.prototype = {};
 /**
  * @param {Event} event
@@ -652,6 +659,7 @@ EventListener.prototype.handleEvent = function (event) {
 
 function EventTarget() {
 }
+
 EventTarget.prototype = {};
 /*
  * These functions may need to be moved into a browser specific library.

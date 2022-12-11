@@ -21,6 +21,7 @@
  */
 function DOMException() {
 }
+
 DOMException.prototype = {};
 /**
  * Constant DOMException.INDEX_SIZE_ERR=1
@@ -194,6 +195,7 @@ DOMException.prototype.code = 0;
  */
 function DOMImplementation() {
 }
+
 DOMImplementation.prototype = {};
 /**
  * function hasFeature(feature, version)
@@ -925,6 +927,7 @@ Node.prototype.hasAttributes = function () {
  */
 function NodeList() {
 }
+
 NodeList.prototype = {};
 /**
  * Property length
@@ -962,6 +965,7 @@ NodeList.prototype.item = function (index) {
  */
 function NamedNodeMap() {
 }
+
 NamedNodeMap.prototype = {};
 /**
  * Property length
@@ -1731,6 +1735,7 @@ ProcessingInstruction.prototype.data = "";
  */
 function HTMLCollection() {
 }
+
 HTMLCollection.prototype = {};
 /**
  * Property length
@@ -1777,6 +1782,7 @@ HTMLCollection.prototype.namedItem = function (index) {
  */
 function HTMLOptionsCollection() {
 }
+
 HTMLOptionsCollection.prototype = {};
 /**
  * Property length
@@ -5623,4 +5629,5 @@ HTMLIFrameElement.prototype.contentDocument = new HTMLDocument();
  */
 function CSS2Properties() {
 }
+
 CSS2Properties.prototype = {};

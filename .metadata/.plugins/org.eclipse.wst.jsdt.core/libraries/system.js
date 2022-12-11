@@ -424,6 +424,7 @@ Number.prototype.toPrecision = function (fractionDigits) {
  */
 function Boolean() {
 }
+
 Boolean.prototype = {};
 
 /**
@@ -435,6 +436,7 @@ Boolean.prototype = {};
  */
 function Array() {
 }
+
 Array.prototype = {};
 /**
  * Property length
@@ -573,6 +575,7 @@ Array.prototype.unshift = function (values) {
  */
 function Function() {
 }
+
 Function.prototype = {};
 /**
  * function apply (thisObject, argArray)
@@ -614,6 +617,7 @@ Function.prototype.length = 0;
  */
 function Date(s) {
 }
+
 Date.prototype = {};
 /**
  * function UTC(hour, min, sec, ms)
@@ -1251,6 +1255,7 @@ function encodeURI(URI) {
  */
 function Math() {
 }
+
 Math.prototype = {};
 /**
  * Property E
@@ -1536,6 +1541,7 @@ Math.tan = function (x) {
  */
 function RegExp() {
 }
+
 RegExp.prototype = {};
 /**
  * function exec(string)
@@ -1614,6 +1620,7 @@ RegExp.prototype.lastIndex = 0;
  */
 function Error(message) {
 }
+
 Error.prototype = {};
 /**
  * property name

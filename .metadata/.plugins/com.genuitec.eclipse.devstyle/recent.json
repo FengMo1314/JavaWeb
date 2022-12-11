@@ -1,1 +1,42 @@
-{"lastUsed":1669956072354,"path":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","projectCount":4,"recentFiles":[{"path":"\/MyWeb\/src\/main\/webapp\/MyApp\/exception","parentWorkspace":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","name":"guess.jsp","lastModified":1669863597246,"locationURI":"file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/MyWeb\/src\/main\/webapp\/MyApp\/exception\/guess.jsp"},{"path":"\/webmaven","parentWorkspace":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","name":"pom.xml","lastModified":1669955472863,"locationURI":"file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/webmaven\/pom.xml"},{"path":"\/JavaWeb&chen\/src\/main\/java\/day05","parentWorkspace":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","name":"Demo.java","lastModified":1669955765045,"locationURI":"file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/JavaWeb&chen\/src\/main\/java\/day05\/Demo.java"},{"path":"\/JavaWeb&chen\/src\/main\/java\/index","parentWorkspace":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","name":"DBhelp.java","lastModified":1669955765045,"locationURI":"file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/JavaWeb&chen\/src\/main\/java\/index\/DBhelp.java"},{"path":"\/Servers\/Tomcat v10.0 Server at localhost-config","parentWorkspace":"D:\/MyProgrammingLanguagesWorkspace\/JavaWeb","name":"server.xml","lastModified":1669879353685,"locationURI":"file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/Servers\/Tomcat%20v10.0%20Server%20at%20localhost-config\/server.xml"}]}
+{
+  "lastUsed": 1669956072354,
+  "path": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+  "projectCount": 4,
+  "recentFiles": [
+    {
+      "path": "\/MyWeb\/src\/main\/webapp\/MyApp\/exception",
+      "parentWorkspace": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+      "name": "guess.jsp",
+      "lastModified": 1669863597246,
+      "locationURI": "file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/MyWeb\/src\/main\/webapp\/MyApp\/exception\/guess.jsp"
+    },
+    {
+      "path": "\/webmaven",
+      "parentWorkspace": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+      "name": "pom.xml",
+      "lastModified": 1669955472863,
+      "locationURI": "file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/webmaven\/pom.xml"
+    },
+    {
+      "path": "\/JavaWeb&chen\/src\/main\/java\/day05",
+      "parentWorkspace": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+      "name": "Demo.java",
+      "lastModified": 1669955765045,
+      "locationURI": "file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/JavaWeb&chen\/src\/main\/java\/day05\/Demo.java"
+    },
+    {
+      "path": "\/JavaWeb&chen\/src\/main\/java\/index",
+      "parentWorkspace": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+      "name": "DBhelp.java",
+      "lastModified": 1669955765045,
+      "locationURI": "file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/JavaWeb&chen\/src\/main\/java\/index\/DBhelp.java"
+    },
+    {
+      "path": "\/Servers\/Tomcat v10.0 Server at localhost-config",
+      "parentWorkspace": "D:\/MyProgrammingLanguagesWorkspace\/JavaWeb",
+      "name": "server.xml",
+      "lastModified": 1669879353685,
+      "locationURI": "file:\/D:\/MyProgrammingLanguagesWorkspace\/JavaWeb\/Servers\/Tomcat%20v10.0%20Server%20at%20localhost-config\/server.xml"
+    }
+  ]
+}

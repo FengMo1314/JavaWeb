@@ -126,6 +126,7 @@ Window.prototype.localStorage = new Storage();
  */
 function Storage() {
 }
+
 Storage.prototype = {};
 
 /**
@@ -193,6 +194,7 @@ Storage.prototype.clear = function () {
  */
 function WebSocket(url) {
 }
+
 WebSocket.prototype = {};
 
 /**
@@ -308,6 +310,7 @@ Navigator.prototype.geolocation = new Geolocation();
  */
 function Geolocation() {
 }
+
 Geolocation.prototype = {};
 
 /**
@@ -349,6 +352,7 @@ Geolocation.prototype.clearWatch = function (watchId) {
  */
 function Coordinates() {
 }
+
 Coordinates.prototype = {};
 
 /**
@@ -419,6 +423,7 @@ Coordinates.prototype.speed = Number();
  */
 function Position() {
 }
+
 Position.prototype = {};
 
 /**
@@ -443,6 +448,7 @@ Position.prototype.timestamp = Number;
  */
 function PositionError() {
 }
+
 PositionError.prototype = {};
 
 /**
@@ -491,6 +497,7 @@ PositionError.prototype.message = String();
  */
 function PositionOptions() {
 }
+
 PositionOptions.prototype = {};
 
 /**
@@ -523,6 +530,7 @@ PositionOptions.prototype.maximumAge = Number();
  */
 function TimeRanges() {
 }
+
 TimeRanges.prototype = {};
 
 /**
@@ -561,6 +569,7 @@ function end(index) {
  */
 function MediaError() {
 }
+
 MediaError.prototype = {};
 
 /**
