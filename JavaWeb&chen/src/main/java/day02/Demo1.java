@@ -31,6 +31,7 @@ public class Demo1 extends HttpServlet {
 		// TODO 自动生成的构造函数存根
 	}
 
+	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO 自动生成的方法存根
 		resp.setContentType("text/html;charset=utf-8");

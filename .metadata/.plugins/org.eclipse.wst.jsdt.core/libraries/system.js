@@ -18,7 +18,7 @@
  * @since Level 2 Document Object Model Core Definition.
  */
 function Object() {
-};
+}
 /**
  * function toString()
  * @memberOf   Object
@@ -50,7 +50,7 @@ Object.prototype.toLocaleString = function () {
  * @since   Level 2 Document Object Model Core Definition.
  */
 Object.prototype.valueOf = function () {
-    return new Object();
+    return {};
 };
 /**
  * function hasOwnProperty(name)
@@ -107,7 +107,7 @@ Object.prototype.constructor = new Function();
 function String() {
 }
 
-String.prototype = new Object();
+String.prototype = {};
 /**
  * static function fromCharCode(charCode1, ...)
  * @memberOf   String
@@ -335,7 +335,7 @@ String.prototype.toLocaleUpperCase = function () {
 function Number() {
 }
 
-Number.prototype = new Object();
+Number.prototype = {};
 /**
  * property MIN_VALUE
  * @type Number
@@ -423,8 +423,8 @@ Number.prototype.toPrecision = function (fractionDigits) {
  * @since Level 2 Document Object Model Core Definition.
  */
 function Boolean() {
-};
-Boolean.prototype = new Object();
+}
+Boolean.prototype = {};
 
 /**
  * Object Array()
@@ -434,8 +434,8 @@ Boolean.prototype = new Object();
  * @since Level 2 Document Object Model Core Definition.
  */
 function Array() {
-};
-Array.prototype = new Object();
+}
+Array.prototype = {};
 /**
  * Property length
  * @type    Number
@@ -478,7 +478,7 @@ Array.prototype.join = function (seperator) {
  * @since   Level 2 Document Object Model Core Definition.
  */
 Array.prototype.pop = function () {
-    return new Object();
+    return {};
 };
 /**
  * function push(args)
@@ -510,7 +510,7 @@ Array.prototype.reverse = function () {
  * @since   Level 2 Document Object Model Core Definition.
  */
 Array.prototype.shift = function () {
-    return new Object();
+    return {};
 };
 /**
  * function slice(start, end)
@@ -572,8 +572,8 @@ Array.prototype.unshift = function (values) {
  * @since Level 2 Document Object Model Core Definition.
  */
 function Function() {
-};
-Function.prototype = new Object();
+}
+Function.prototype = {};
 /**
  * function apply (thisObject, argArray)
  * @param {Object} thisObject
@@ -583,7 +583,7 @@ Function.prototype = new Object();
  * @since   Level 2 Document Object Model Core Definition.
  */
 Function.prototype.apply = function (thisArg, argArray) {
-    return new Object();
+    return {};
 };
 /**
  * function call (thisObject, args)
@@ -594,7 +594,7 @@ Function.prototype.apply = function (thisArg, argArray) {
  * @since   Level 2 Document Object Model Core Definition.
  */
 Function.prototype.call = function (thisObject, args) {
-    return new Object();
+    return {};
 };
 /**
  * property length
@@ -613,8 +613,8 @@ Function.prototype.length = 0;
  * @since Level 2 Document Object Model Core Definition.
  */
 function Date(s) {
-};
-Date.prototype = new Object();
+}
+Date.prototype = {};
 /**
  * function UTC(hour, min, sec, ms)
  * @memberOf Date
@@ -700,7 +700,7 @@ Date.prototype.toLocaleTimeString = function () {
  * @since Level 2 Document Object Model Core Definition.
  */
 Date.prototype.valueOf = function () {
-    return new Object();
+    return {};
 };
 /**
  * function getFullYear()
@@ -1103,8 +1103,8 @@ var Infinity = 0;
  * @since   Level 2 Document Object Model Core Definition.
  */
 function eval(s) {
-    return new Object();
-};
+    return {};
+}
 
 //@GINO: Bug 197987 (Temp Fix)
 /**
@@ -1131,7 +1131,7 @@ var undefined = null;
  */
 function parseInt(s, radix) {
     return 0;
-};
+}
 
 /**
  * function parseFloat(s)
@@ -1143,7 +1143,7 @@ function parseInt(s, radix) {
  */
 function parseFloat(s) {
     return 0;
-};
+}
 
 /**
  * function escape(s)
@@ -1155,7 +1155,7 @@ function parseFloat(s) {
  */
 function escape(s) {
     return "";
-};
+}
 
 /**
  * function unescape(s)
@@ -1167,7 +1167,7 @@ function escape(s) {
  */
 function unescape(s) {
     return "";
-};
+}
 
 /**
  * function isNaN(number)
@@ -1179,7 +1179,7 @@ function unescape(s) {
  */
 function isNaN(number) {
     return false;
-};
+}
 
 /**
  * function isFinite(number)
@@ -1191,7 +1191,7 @@ function isNaN(number) {
  */
 function isFinite(number) {
     return false;
-};
+}
 
 /**
  * function decodeURI(encodedURI)
@@ -1203,7 +1203,7 @@ function isFinite(number) {
  */
 function decodeURI(encodedURI) {
     return "";
-};
+}
 
 /**
  * @param {String} uriComponent
@@ -1214,7 +1214,7 @@ function decodeURI(encodedURI) {
  */
 function decodeURIComponent(uriComponent) {
     return "";
-};
+}
 
 /**
  * function encodeURIComponent(uriComponent)
@@ -1226,7 +1226,7 @@ function decodeURIComponent(uriComponent) {
  */
 function encodeURIComponent(uriComponent) {
     return "";
-};
+}
 
 /**
  * function encodeURIComponent(URI)
@@ -1238,7 +1238,7 @@ function encodeURIComponent(uriComponent) {
  */
 function encodeURI(URI) {
     return "";
-};
+}
 
 /**
  * Object Math(\s)
@@ -1250,8 +1250,8 @@ function encodeURI(URI) {
 
  */
 function Math() {
-};
-Math.prototype = new Object();
+}
+Math.prototype = {};
 /**
  * Property E
  * @memberOf Math
@@ -1535,8 +1535,8 @@ Math.tan = function (x) {
  * @since Level 2 Document Object Model Core Definition.
  */
 function RegExp() {
-};
-RegExp.prototype = new Object();
+}
+RegExp.prototype = {};
 /**
  * function exec(string)
  * @param {String} string
@@ -1613,8 +1613,8 @@ RegExp.prototype.lastIndex = 0;
  * @since Level 2 Document Object Model Core Definition.
  */
 function Error(message) {
-};
-Error.prototype = new Object();
+}
+Error.prototype = {};
 /**
  * property name
  * @type String
@@ -1642,7 +1642,7 @@ Error.prototype.message = "";
  * @since Level 2 Document Object Model Core Definition.
  */
 function EvalError() {
-};
+}
 EvalError.prototype = new Error("");
 
 /**
@@ -1655,7 +1655,7 @@ EvalError.prototype = new Error("");
  * @since Level 2 Document Object Model Core Definition.
  */
 function RangeError() {
-};
+}
 RangeError.prototype = new Error("");
 
 /**
@@ -1668,7 +1668,7 @@ RangeError.prototype = new Error("");
  * @since Level 2 Document Object Model Core Definition.
  */
 function ReferenceError() {
-};
+}
 ReferenceError.prototype = new Error("");
 
 /**
@@ -1681,7 +1681,7 @@ ReferenceError.prototype = new Error("");
  * @since Level 2 Document Object Model Core Definition.
  */
 function SyntaxError() {
-};
+}
 SyntaxError.prototype = new Error("");
 
 /**
@@ -1694,7 +1694,7 @@ SyntaxError.prototype = new Error("");
  * @since Level 2 Document Object Model Core Definition.
  */
 function TypeError() {
-};
+}
 TypeError.prototype = new Error("");
 
 /**
@@ -1707,7 +1707,7 @@ TypeError.prototype = new Error("");
  * @since Level 2 Document Object Model Core Definition.
  */
 function URIError() {
-};
+}
 URIError.prototype = new Error("");
 
 //support for debugger keyword

@@ -23,6 +23,7 @@ public class Demo2 implements Servlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse
 	 *      response) 原生service
 	 */
+	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		HttpServletRequest req = (HttpServletRequest) request;

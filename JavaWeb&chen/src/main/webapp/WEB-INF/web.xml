@@ -149,4 +149,14 @@
     <servlet-name>day04</servlet-name>
     <url-pattern>/day04</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>day05-Demo</display-name>
+    <servlet-name>day05-Demo</servlet-name>
+    <servlet-class>day05.Demo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>day05-Demo</servlet-name>
+    <url-pattern>/day05</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -25,7 +25,6 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.Statement"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="index.DBhelp"/>
     <fullyQualifiedTypeName name="index.Db"/>
     <fullyQualifiedTypeName name="jakarta.servlet.Servlet"/>
     <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
@@ -39,4 +38,6 @@
     <fullyQualifiedTypeName name="day03.Islogin"/>
     <fullyQualifiedTypeName name="jakarta.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="day04.IsLogin"/>
+    <fullyQualifiedTypeName name="JDBC.JdbcH"/>
+    <fullyQualifiedTypeName name="index.DBhelp"/>
 </qualifiedTypeNameHistroy>

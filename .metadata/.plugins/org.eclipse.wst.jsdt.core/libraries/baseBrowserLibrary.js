@@ -20,8 +20,8 @@
  * @see Object
  */
 function DOMException() {
-};
-DOMException.prototype = new Object();
+}
+DOMException.prototype = {};
 /**
  * Constant DOMException.INDEX_SIZE_ERR=1
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
@@ -193,8 +193,8 @@ DOMException.prototype.code = 0;
  * @see   Object
  */
 function DOMImplementation() {
-};
-DOMImplementation.prototype = new Object();
+}
+DOMImplementation.prototype = {};
 /**
  * function hasFeature(feature, version)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
@@ -252,7 +252,7 @@ DOMImplementation.prototype.createDocument = function (namespaceURI, qualifiedNa
  * @see   Node
  */
 function DocumentFragment() {
-};
+}
 DocumentFragment.prototype = new Node();
 
 /**
@@ -266,7 +266,7 @@ DocumentFragment.prototype = new Node();
  * @see Node
  */
 function Document() {
-};
+}
 Document.prototype = new Node();
 /**
  * Property defaultView
@@ -316,7 +316,7 @@ Document.prototype.documentElement = new HTMLElement();
  * @since Standard ECMA-262 3rd. Edition
  * @since Level 2 Document Object Model Core Definition.
  */
-Document.prototype.styleSheets = new Array();
+Document.prototype.styleSheets = [];
 /**
  * function createElement(tagName)
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
@@ -481,7 +481,7 @@ Document.prototype.createElementNS = function (namespaceURI, qualifiedName) {
  * @see Element
  */
 Document.prototype.createEvent = function (eventType) {
-    return new Object();
+    return {};
 };
 /**
  * function createAttributeNS(namespaceURI, qualifiedName)
@@ -538,7 +538,7 @@ Document.prototype.getElementById = function (elementId) {
  * @see EventTarget
  */
 function Node() {
-};
+}
 Node.prototype = new EventTarget();
 /**
  * Constant Node.ELEMENT_NODE=1
@@ -924,8 +924,8 @@ Node.prototype.hasAttributes = function () {
  * @see Object
  */
 function NodeList() {
-};
-NodeList.prototype = new Object();
+}
+NodeList.prototype = {};
 /**
  * Property length
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
@@ -961,8 +961,8 @@ NodeList.prototype.item = function (index) {
  * @see Object
  */
 function NamedNodeMap() {
-};
-NamedNodeMap.prototype = new Object();
+}
+NamedNodeMap.prototype = {};
 /**
  * Property length
  * http://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/ecma-script-binding.html
@@ -1082,7 +1082,7 @@ NamedNodeMap.prototype.removeNamedItemNS = function (namespaceURI, localName) {
  * @see Node
  */
 function CharacterData() {
-};
+}
 CharacterData.prototype = new Node();
 /**
  * Property data
@@ -1177,7 +1177,7 @@ CharacterData.prototype.replaceData = function (offset, count, arg) {
  * @see Node
  */
 function Attr() {
-};
+}
 Attr.prototype = new Node();
 /**
  * Property name
@@ -1229,7 +1229,7 @@ Attr.prototype.ownerElement = new Element();
  * @see Node
  */
 function Element() {
-};
+}
 Element.prototype = new Node();
 /**
  * Property tagName
@@ -1484,7 +1484,7 @@ Element.prototype.hasAttributeNS = function (namespaceURI, localName) {
  * @see CharacterData
  */
 function Text() {
-};
+}
 Text.prototype = new CharacterData();
 /**
  * function splitText(offset)
@@ -1512,7 +1512,7 @@ Text.prototype.splitText = function (offset) {
  * @see CharacterData
  */
 function Comment() {
-};
+}
 Comment.prototype = new CharacterData();
 
 /**
@@ -1526,7 +1526,7 @@ Comment.prototype = new CharacterData();
  * @see Text
  */
 function CDATASection() {
-};
+}
 CDATASection.prototype = new Text();
 
 /**
@@ -1540,7 +1540,7 @@ CDATASection.prototype = new Text();
  * @see Node
  */
 function DocumentType() {
-};
+}
 DocumentType.prototype = new Node();
 /**
  * Property name
@@ -1608,7 +1608,7 @@ DocumentType.prototype.internalSubset = "";
  * @see Node
  */
 function Notation() {
-};
+}
 Notation.prototype = new Node();
 /**
  * Property publicId
@@ -1640,7 +1640,7 @@ Notation.prototype.systemId = "";
  * @see Node
  */
 function Entity() {
-};
+}
 Entity.prototype = new Node();
 /**
  * Property publicId
@@ -1681,7 +1681,7 @@ Entity.prototype.notationName = "";
  * @see Node
  */
 function EntityReference() {
-};
+}
 EntityReference.prototype = new Node();
 
 /**
@@ -1695,7 +1695,7 @@ EntityReference.prototype = new Node();
  * @see Node
  */
 function ProcessingInstruction() {
-};
+}
 ProcessingInstruction.prototype = new Node();
 /**
  * Property target
@@ -1730,8 +1730,8 @@ ProcessingInstruction.prototype.data = "";
  * @since Level 2 Document Object Model HTML Specification.
  */
 function HTMLCollection() {
-};
-HTMLCollection.prototype = new Object();
+}
+HTMLCollection.prototype = {};
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
@@ -1776,8 +1776,8 @@ HTMLCollection.prototype.namedItem = function (index) {
  * @since Level 2 Document Object Model HTML Specification.
  */
 function HTMLOptionsCollection() {
-};
-HTMLOptionsCollection.prototype = new Object();
+}
+HTMLOptionsCollection.prototype = {};
 /**
  * Property length
  * http://www.w3.org/TR/2003/REC-DOM-Level-2-HTML-20030109/html.html
@@ -1824,7 +1824,7 @@ HTMLOptionsCollection.prototype.namedItem = function (index) {
  * @see Document
  */
 function HTMLDocument() {
-};
+}
 HTMLDocument.prototype = new Document();
 /**
  * Property title
@@ -1997,7 +1997,7 @@ HTMLDocument.prototype.getElementsByName = function (elementName) {
  * @see Element
  */
 function HTMLElement() {
-};
+}
 HTMLElement.prototype = new Element();
 /**
  * Property id
@@ -2122,7 +2122,7 @@ HTMLElement.prototype.style = new CSS2Properties();
  * @see HTMLElement
  */
 function HTMLHtmlElement() {
-};
+}
 HTMLHtmlElement.prototype = new HTMLElement();
 /**
  * Property version
@@ -2145,7 +2145,7 @@ HTMLHtmlElement.prototype.version = "";
  * @see HTMLElement
  */
 function HTMLHeadElement() {
-};
+}
 HTMLHeadElement.prototype = new HTMLElement();
 /**
  * Property profile
@@ -2168,7 +2168,7 @@ HTMLHeadElement.prototype.profile = "";
  * @see HTMLElement
  */
 function HTMLLinkElement() {
-};
+}
 HTMLLinkElement.prototype = new HTMLElement();
 /**
  * Property disabled
@@ -2263,7 +2263,7 @@ HTMLLinkElement.prototype.type = "";
  * @see HTMLElement
  */
 function HTMLTitleElement() {
-};
+}
 HTMLTitleElement.prototype = new HTMLElement();
 /**
  * Property text
@@ -2286,7 +2286,7 @@ HTMLTitleElement.prototype.text = "";
  * @see HTMLElement
  */
 function HTMLMetaElement() {
-};
+}
 HTMLMetaElement.prototype = new HTMLElement();
 /**
  * Property content
@@ -2336,7 +2336,7 @@ HTMLMetaElement.prototype.scheme = "";
  * @see HTMLElement
  */
 function HTMLBaseElement() {
-};
+}
 HTMLBaseElement.prototype = new HTMLElement();
 /**
  * Property href
@@ -2368,7 +2368,7 @@ HTMLBaseElement.prototype.target = "";
  * @see HTMLElement
  */
 function HTMLIsIndexElement() {
-};
+}
 HTMLIsIndexElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -2400,7 +2400,7 @@ HTMLIsIndexElement.prototype.prompt = "";
  * @see HTMLElement
  */
 function HTMLStyleElement() {
-};
+}
 HTMLStyleElement.prototype = new HTMLElement();
 /**
  * Property disabled
@@ -2441,7 +2441,7 @@ HTMLStyleElement.prototype.type = "";
  * @see HTMLElement
  */
 function HTMLBodyElement() {
-};
+}
 HTMLBodyElement.prototype = new HTMLElement();
 /**
  * Property aLink
@@ -2509,7 +2509,7 @@ HTMLBodyElement.prototype.vLink = "";
  * @see HTMLElement
  */
 function HTMLFormElement() {
-};
+}
 HTMLFormElement.prototype = new HTMLElement();
 /**
  * Property elements
@@ -2613,7 +2613,7 @@ HTMLFormElement.prototype.reset = function () {
  * @see HTMLElement
  */
 function HTMLSelectElement() {
-};
+}
 HTMLSelectElement.prototype = new HTMLElement();
 /**
  * Property type
@@ -2767,7 +2767,7 @@ HTMLSelectElement.prototype.focus = function () {
  * @see HTMLElement
  */
 function HTMLOptGroupElement() {
-};
+}
 HTMLOptGroupElement.prototype = new HTMLElement();
 /**
  * Property disabled
@@ -2797,7 +2797,7 @@ HTMLOptGroupElement.prototype.label = "";
  * @param {Boolean} selected
  */
 function Option(text, value, defaultSelected, selected) {
-};
+}
 Option.prototype = new HTMLOptionElement();
 
 /**
@@ -2811,7 +2811,7 @@ Option.prototype = new HTMLOptionElement();
  * @see HTMLElement
  */
 function HTMLOptionElement() {
-};
+}
 HTMLOptionElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -2897,7 +2897,7 @@ HTMLOptionElement.prototype.value = "";
  * @see HTMLElement
  */
 function HTMLInputElement() {
-};
+}
 HTMLInputElement.prototype = new HTMLElement();
 /**
  * Property defaultValue
@@ -3109,7 +3109,7 @@ HTMLInputElement.prototype.click = function () {
  * @see HTMLElement
  */
 function HTMLTextAreaElement() {
-};
+}
 HTMLTextAreaElement.prototype = new HTMLElement();
 /**
  * Property defaultValue
@@ -3249,7 +3249,7 @@ HTMLTextAreaElement.prototype.select = function () {
  * @see HTMLElement
  */
 function HTMLButtonElement() {
-};
+}
 HTMLButtonElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -3326,7 +3326,7 @@ HTMLButtonElement.prototype.value = "";
  * @see HTMLElement
  */
 function HTMLLabelElement() {
-};
+}
 HTMLLabelElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -3367,7 +3367,7 @@ HTMLLabelElement.prototype.htmlFor = "";
  * @see HTMLElement
  */
 function HTMLFieldSetElement() {
-};
+}
 HTMLFieldSetElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -3390,7 +3390,7 @@ HTMLFieldSetElement.prototype.form = new HTMLFormElement();
  * @see HTMLElement
  */
 function HTMLLegendElement() {
-};
+}
 HTMLLegendElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -3431,7 +3431,7 @@ HTMLLegendElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLUListElement() {
-};
+}
 HTMLUListElement.prototype = new HTMLElement();
 /**
  * Property compact
@@ -3463,7 +3463,7 @@ HTMLUListElement.prototype.type = "";
  * @see HTMLElement
  */
 function HTMLOListElement() {
-};
+}
 HTMLOListElement.prototype = new HTMLElement();
 /**
  * Property compact
@@ -3504,7 +3504,7 @@ HTMLOListElement.prototype.type = "";
  * @see HTMLElement
  */
 function HTMLDListElement() {
-};
+}
 HTMLDListElement.prototype = new HTMLElement();
 /**
  * Property compact
@@ -3527,7 +3527,7 @@ HTMLDListElement.prototype.compact = false;
  * @see HTMLElement
  */
 function HTMLDirectoryElement() {
-};
+}
 HTMLDirectoryElement.prototype = new HTMLElement();
 /**
  * Property compact
@@ -3550,7 +3550,7 @@ HTMLDirectoryElement.prototype.compact = false;
  * @see HTMLElement
  */
 function HTMLMenuElement() {
-};
+}
 HTMLMenuElement.prototype = new HTMLElement();
 /**
  * Property compact
@@ -3573,7 +3573,7 @@ HTMLMenuElement.prototype.compact = false;
  * @see HTMLElement
  */
 function HTMLLIElement() {
-};
+}
 HTMLLIElement.prototype = new HTMLElement();
 /**
  * Property type
@@ -3605,7 +3605,7 @@ HTMLLIElement.prototype.value = 0;
  * @see HTMLElement
  */
 function HTMLDivElement() {
-};
+}
 HTMLDivElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -3628,7 +3628,7 @@ HTMLDivElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLParagraphElement() {
-};
+}
 HTMLParagraphElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -3651,7 +3651,7 @@ HTMLParagraphElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLHeadingElement() {
-};
+}
 HTMLHeadingElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -3674,7 +3674,7 @@ HTMLHeadingElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLQuoteElement() {
-};
+}
 HTMLQuoteElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -3697,7 +3697,7 @@ HTMLQuoteElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLPreElement() {
-};
+}
 HTMLPreElement.prototype = new HTMLElement();
 /**
  * Property width
@@ -3720,7 +3720,7 @@ HTMLPreElement.prototype.width = 0;
  * @see HTMLElement
  */
 function HTMLBRElement() {
-};
+}
 HTMLBRElement.prototype = new HTMLElement();
 /**
  * Property clear
@@ -3743,7 +3743,7 @@ HTMLBRElement.prototype.clear = "";
  * @see HTMLElement
  */
 function HTMLBaseFontElement() {
-};
+}
 HTMLBaseFontElement.prototype = new HTMLElement();
 /**
  * Property color
@@ -3784,7 +3784,7 @@ HTMLBaseFontElement.prototype.size = 0;
  * @see HTMLElement
  */
 function HTMLFontElement() {
-};
+}
 HTMLFontElement.prototype = new HTMLElement();
 /**
  * Property color
@@ -3825,7 +3825,7 @@ HTMLFontElement.prototype.size = 0;
  * @see HTMLElement
  */
 function HTMLHRElement() {
-};
+}
 HTMLHRElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -3875,7 +3875,7 @@ HTMLHRElement.prototype.width = "";
  * @see HTMLElement
  */
 function HTMLModElement() {
-};
+}
 HTMLModElement.prototype = new HTMLElement();
 /**
  * Property cite
@@ -3907,7 +3907,7 @@ HTMLModElement.prototype.dateTime = "";
  * @see HTMLElement
  */
 function HTMLAnchorElement() {
-};
+}
 HTMLAnchorElement.prototype = new HTMLElement();
 /**
  * Property accessKey
@@ -4043,7 +4043,7 @@ HTMLAnchorElement.prototype.focus = function () {
  * @param {Number} height
  */
 function Image(width, height) {
-};
+}
 Image.prototype = new HTMLImageElement();
 
 /**
@@ -4057,7 +4057,7 @@ Image.prototype = new HTMLImageElement();
  * @see HTMLElement
  */
 function HTMLImageElement() {
-};
+}
 HTMLImageElement.prototype = new HTMLElement();
 /**
  * Property name
@@ -4179,7 +4179,7 @@ HTMLImageElement.prototype.width = 0;
  * @see HTMLElement
  */
 function HTMLObjectElement() {
-};
+}
 HTMLObjectElement.prototype = new HTMLElement();
 /**
  * Property form
@@ -4364,7 +4364,7 @@ HTMLObjectElement.prototype.contentDocument = new HTMLDocument();
  * @see HTMLElement
  */
 function HTMLParamElement() {
-};
+}
 HTMLParamElement.prototype = new HTMLElement();
 /**
  * Property name
@@ -4414,7 +4414,7 @@ HTMLParamElement.prototype.valueType = "";
  * @see HTMLElement
  */
 function HTMLAppletElement() {
-};
+}
 HTMLAppletElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -4527,7 +4527,7 @@ HTMLAppletElement.prototype.width = "";
  * @see HTMLElement
  */
 function HTMLMapElement() {
-};
+}
 HTMLMapElement.prototype = new HTMLElement();
 /**
  * Property areas
@@ -4559,7 +4559,7 @@ HTMLMapElement.prototype.name = "";
  * @see HTMLElement
  */
 function HTMLAreaElement() {
-};
+}
 HTMLAreaElement.prototype = new HTMLElement();
 /**
  * Property accessKey
@@ -4645,7 +4645,7 @@ HTMLAreaElement.prototype.target = "";
  * @see HTMLElement
  */
 function HTMLScriptElement() {
-};
+}
 HTMLScriptElement.prototype = new HTMLElement();
 /**
  * Property text
@@ -4722,7 +4722,7 @@ HTMLScriptElement.prototype.type = "";
  * @see HTMLElement
  */
 function HTMLTableElement() {
-};
+}
 HTMLTableElement.prototype = new HTMLElement();
 /**
  * Property caption
@@ -4949,7 +4949,7 @@ HTMLTableElement.prototype.deleteRow = function (index) {
  * @see HTMLElement
  */
 function HTMLTableCaptionElement() {
-};
+}
 HTMLTableCaptionElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -4972,7 +4972,7 @@ HTMLTableCaptionElement.prototype.align = "";
  * @see HTMLElement
  */
 function HTMLTableColElement() {
-};
+}
 HTMLTableColElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -5040,7 +5040,7 @@ HTMLTableColElement.prototype.width = "";
  * @see HTMLElement
  */
 function HTMLTableSelectionElement() {
-};
+}
 HTMLTableSelectionElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -5123,7 +5123,7 @@ HTMLTableSelectionElement.prototype.deleteRow = function (index) {
  * @see HTMLElement
  */
 function HTMLTableRowElement() {
-};
+}
 HTMLTableRowElement.prototype = new HTMLElement();
 /**
  * Property rowIndex
@@ -5233,7 +5233,7 @@ HTMLTableRowElement.prototype.deleteCell = function (index) {
  * @see HTMLElement
  */
 function HTMLTableCellElement() {
-};
+}
 HTMLTableCellElement.prototype = new HTMLElement();
 /**
  * Property cellIndex
@@ -5382,7 +5382,7 @@ HTMLTableCellElement.prototype.width = "";
  * @see HTMLElement
  */
 function HTMLFrameSetElement() {
-};
+}
 HTMLFrameSetElement.prototype = new HTMLElement();
 /**
  * Property cols
@@ -5414,7 +5414,7 @@ HTMLFrameSetElement.prototype.rows = "";
  * @see HTMLElement
  */
 function HTMLFrameElement() {
-};
+}
 HTMLFrameElement.prototype = new HTMLElement();
 /**
  * Property frameBorder
@@ -5509,7 +5509,7 @@ HTMLFrameElement.prototype.contentDocument = new HTMLDocument();
  * @see HTMLElement
  */
 function HTMLIFrameElement() {
-};
+}
 HTMLIFrameElement.prototype = new HTMLElement();
 /**
  * Property align
@@ -5622,5 +5622,5 @@ HTMLIFrameElement.prototype.contentDocument = new HTMLDocument();
  * @since Level 2 Document Object Model Style Specification.
  */
 function CSS2Properties() {
-};
-CSS2Properties.prototype = new Object();
+}
+CSS2Properties.prototype = {};

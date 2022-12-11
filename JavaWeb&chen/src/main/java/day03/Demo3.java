@@ -40,7 +40,7 @@ public class Demo3 extends HttpServlet {
 //		}finally {
 			response.sendRedirect("./html/login.html");
 //		}
-		
+
 
 	}
 

@@ -25,10 +25,10 @@ Window.prototype.createRequest = function () {
  * Object XMLHttpRequest
  * @type constructor
  */
-XMLHttpRequest.prototype = new Object();
+XMLHttpRequest.prototype = {};
 
 function XMLHttpRequest() {
-};
+}
 
 /**
  * function onreadystatechange

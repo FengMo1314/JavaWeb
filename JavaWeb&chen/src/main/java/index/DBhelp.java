@@ -3,8 +3,6 @@
  */
 package index;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -22,11 +20,11 @@ public class DBhelp {
 	ResultSet rs;
 	Connection conn;
 	static SQLBean sqb;
-	DBhelp(String Myproperties) {
+	public DBhelp(String Myproperties) {
 		this.openSQL(Myproperties);
 	}
 
-	DBhelp(String driver, String url, String name, String pass) {
+	public DBhelp(String driver, String url, String name, String pass) {
 		this.openSQL(driver, url, name, pass);
 	}
 
@@ -61,7 +59,7 @@ public class DBhelp {
 	}
 
 	public void select() {
-		String sql = "SELECT * FROM mes;";
+		String sql = "SELECT * FROM mes";
 		try {
 			System.out.println(" 实例化Statement对象...");
 			stmt = conn.createStatement();
@@ -70,10 +68,10 @@ public class DBhelp {
 			while (rs.next()) {
 				// 通过字段检索
 				int id = rs.getInt("id");
-				String name = rs.getString("name");
-				int age = rs.getInt("age");
+				String username = rs.getString("username");
+				String pass = rs.getString("password");
 				// 输出数据
-				String lis = "ID\tname\tage\n" + id + "\t" + name + "\t" + age;
+				String lis = "ID\tname\tpass\n" + id + "\t" + username + "\t" + pass;
 				System.out.println(lis);
 			}
 			// 完成后关闭
@@ -86,9 +84,11 @@ public class DBhelp {
 		}
 
 	}
-
+	public boolean insert() {
+		return true;
+	}
 	public static void main(String[] args) {
-		DBhelp d = new DBhelp("properties/MySql.properties");
+		DBhelp d = new DBhelp("/properties/MySql.properties");
 //		DBhelp d2=new DBhelp("D:\\MyProgrammingLanguagesWorkspace\\JavaWeb\\JavaWeb&chen\\src\\main\\java\\index\\properties\\MySql.properties");
 		d.select();
 //		d2.select();

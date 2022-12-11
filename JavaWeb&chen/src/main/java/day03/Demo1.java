@@ -45,7 +45,7 @@ public class Demo1 extends HttpServlet {
 			out.print("正确——稍等1秒跳转");
 			response.sendRedirect("./day03-2");
 //				request.getRequestDispatcher("./day03-2").forward(request, response);
-			
+
 		}else {
 			out.print("用户名或者密码错误");
 			response.sendRedirect("./html/login.html");
