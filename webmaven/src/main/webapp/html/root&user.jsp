@@ -37,15 +37,14 @@
         <%
             DBhelp dbh = new DBhelp("../MySql.properties");
             List<TableBean> users = dbh.selectAllBymyuser();
-
         %>
         <label for="text">
             <input name="text" type="text" id="text">
             <button name="button" value="1">添加</button>
         </label>
-        <button name="button" value="3">修改</button>
-        <button name="button" value="2">删除</button>
-        <button name="button" value="4">拉黑</button>
+        <button name="button" value="2">修改</button>
+        <button name="button" value="3">删除</button>
+<%--        <button name="button" value="4">拉黑</button>--%>
         <table>
 
             <colgroup>

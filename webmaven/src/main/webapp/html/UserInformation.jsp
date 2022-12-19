@@ -1,3 +1,4 @@
+<%--@elvariable id="username" type="String"--%>
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
@@ -26,6 +27,11 @@
 </h4>
 <h4>
     <a href="../UserInformation"><%=del%>
+    </a>
+</h4>
+<h4>
+    <a href="updata.jsp">
+        修改信息
     </a>
 </h4>
 <h4>

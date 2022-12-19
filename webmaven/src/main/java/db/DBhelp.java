@@ -88,6 +88,9 @@ public class DBhelp {
         try {
             stmt = conn.createStatement();
             int num = stmt.executeUpdate(sql);
+            if(num>0){
+                System.out.println("OK");
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
 
@@ -99,7 +102,7 @@ public class DBhelp {
 
         // Statement statement = null; 直接使用Statement执行查询语句可能遭到SQL注入攻击,推荐使用PreparedStatement
         PreparedStatement preparedstatement = null;
-        List<TableBean> tableBeans = null;
+        List<TableBean> tableBeans;
         String[] sqls = new String[2];
         sqls[0] = "alter table myuser drop id;";
         sqls[1] = "alter TABLE myuser add id int primary key auto_increment FIRST;";
@@ -239,9 +242,12 @@ public class DBhelp {
                 do {
                     // 通过字段检索
                     int id = rs.getInt("id");
+                    String uid=rs.getString("uid");
                     String name = rs.getString("username");
                     String pass = rs.getString("password");
-                    tb = new TableBean(id, name, pass);
+                    String email=rs.getString("email");
+                    Date birthday=rs.getDate("birthday");
+                    tb = new TableBean(id,uid, name, pass,email,birthday);
                 }
                 while (rs.next());
             }
@@ -275,5 +281,41 @@ public class DBhelp {
 
         }
         return num > 0;
+    }
+    public boolean dellMoreById(String id){
+//        String[] sqls = new String[2];
+//        sqls[0] = "alter table myuser drop id;";
+//        sqls[1] = "alter TABLE myuser add id int primary key auto_increment FIRST;";
+        String mesgs="";
+
+        System.out.println(mesgs);
+        String sql = "DELETE FROM myuser WHERE id="+id+";";
+        int num;
+        try {
+            stmt = conn.createStatement();
+//            for (String s : sqls) {
+//                stmt.addBatch(s);// 将所有的SQL语句添加到Statement中
+//            }
+//            stmt.executeBatch();
+            num = stmt.executeUpdate(sql);
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            System.out.println("DELLBYID");
+
+        }
+        return num > 0;
+    }
+    public boolean updataById(int id,UpdataBean ub){
+        String sql = "UPDATE myuser SET uid='"+ub.getUid()+"',username='"+ub.getUsername()+"',password='"+ub.getPassword()+"',email='"+ub.getEmail()+"',birthday='"+ub.getBirthday()+"' WHERE id="+id+";" ;
+        int num;
+        try {
+            stmt = conn.createStatement();
+            num = stmt.executeUpdate(sql);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return num>0;
     }
 }

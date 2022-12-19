@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="javaweb@localhost" uuid="f253b8ea-7f83-49c8-90d4-e1d4949dd7f0">
+    <data-source source="LOCAL" name="陈湘军" uuid="f253b8ea-7f83-49c8-90d4-e1d4949dd7f0">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://121.40.141.35:3306/student</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="javaweb@localhost" uuid="81cf8070-31ba-44a9-8f85-e0c0b01ec1fa">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

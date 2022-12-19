@@ -48,6 +48,7 @@
       <sourceFolder url="file://$MODULE_DIR$/JavaWeb&amp;chen/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MyWeb/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/chapter03/src/cn" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Servers" isTestSource="false" generated="true" />
       <excludeFolder url="file://$MODULE_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter03/org.eclipse.jdt.apt.core" />
       <excludeFolder url="file://$MODULE_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter03/org.eclipse.jdt.core" />
       <excludeFolder url="file://$MODULE_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter03/org.eclipse.wst.jsdt.web.core" />

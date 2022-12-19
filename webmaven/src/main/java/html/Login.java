@@ -14,9 +14,8 @@ public class Login extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         IsTrue it = new IsTrue();
         response.setContentType("text/html; charset=UTF-8");
-        request.setCharacterEncoding("UTF-8");
-        response.setCharacterEncoding("UTF-8");
-        response.setHeader("Content-type", "text/html;charset=UTF-8");
+//        response.setCharacterEncoding("UTF-8");
+//        response.setHeader("Content-type", "text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String name = request.getParameter("username");
         String pass = request.getParameter("password");
@@ -28,7 +27,7 @@ public class Login extends HttpServlet {
         } else if (is == 0) {
             out.println("登录成功！");
             HttpSession session = request.getSession();
-            session.setMaxInactiveInterval(5);//设置非活跃间隔时间
+            session.setMaxInactiveInterval(100);//设置非活跃间隔时间
             session.setAttribute("username", name);
             response.setHeader("refresh", "1;./");
         } else if (is == 1) {

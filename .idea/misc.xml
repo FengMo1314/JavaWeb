@@ -8,8 +8,13 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/webmaven/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter03/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb&amp;chen/pom.xml" />
+        <option value="$PROJECT_DIR$/MyWeb/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/.idea" />
+  </component>
 </project>

@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class TableBean implements Serializable {
     private int id;
+    private String uid;
     private String username;
     private String password;
     private String email;
@@ -30,8 +31,24 @@ public class TableBean implements Serializable {
         this.email = email;
     }
 
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
     public TableBean(int id, String username, String password, String email, Date birthday) {
         this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.birthday = birthday;
+    }
+    public TableBean(int id, String uid, String username, String password, String email, Date birthday) {
+        this.id = id;
+        this.uid = uid;
         this.username = username;
         this.password = password;
         this.email = email;
@@ -41,6 +58,8 @@ public class TableBean implements Serializable {
     public Date getBirthday() {
         return birthday;
     }
+
+
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;

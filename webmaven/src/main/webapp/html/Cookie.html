@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="../js/cindex.js"></script>
+<div class="box">
+    <h5 onclick="shuaxin()"><--</h5>
+    <input type="text" id="username" value="">
+    <input type="password" class="password">
+    <input type="text" id="dates" value="">
+    <input type="text" id="other" value="">
+    <button onclick="print()">看cookie</button>
+</div>
+<script src="../js/until.js"></script>
+<script>
+    let username = document.getElementById("username");
+    let dates = document.getElementById("dates");
+    let isLogin = document.getElementById("other");
+    username.value = getCookie("username")
+    dates.value = getCookie("lastAccesss")
+    isLogin.value = getCookie("isLogin")
+</script>
+</body>
+</html>

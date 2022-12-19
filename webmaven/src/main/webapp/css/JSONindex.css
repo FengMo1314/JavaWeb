@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+text-decoration: none;
+    text-decoration-color:red;
+    color:black;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+h2,h3,h4,h5,h6{
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.app{
+    /*相对定位*/
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    background-color: darkgreen;
+    z-index:1;
+}
+.box{
+    position:absolute;
+/*//绝对*/
+    width: 100%;
+    height: 100%;
+    /*background-color: aqua;*/
+    overflow: auto;
+    /*overflow: scroll;*/
+}
+.box .top-select{
+    position:absolute;
+    top:10px;
+    right: 20px;
+    background-color: wheat;
+    width:500px;
+    height:55px;
+}
+.box .top-select input{
+    position:relative;
+    left: 50px;
+    height:50px;
+    width:300px;
+}
+.box .top-select button{
+    position:absolute;
+    right:5px;
+    height:53px;
+    width:100px;
+}
+.app .left{
+    max-width:100%;        /* 设置最大宽度限制 */
+    max-height:70%;       /* 设置最大高度限制 */
+    resize:both;             /* 设置元素的宽度和高度均可调整 */
+    overflow:hidden;           /* 设置溢出属性值为auto */
+    position:absolute;
+    min-height:30%;
+    min-width:30%;
+    color:crimson;
+    background-color:wheat;
+    word-wrap:break-word;
+    word-break:break-all;
+    left:10px;
+    /*top:5px;*/
+    /*line-height: 50px;*/
+    z-index:1;
+    /*overflow: hidden;*/
+}
+.left::-webkit-scrollbar{
+    display: none;
+}
+iframe{
+    width: 100%;
+    height:100%;
+}
+.left .lefts{
+    width: 100%;
+    height: 100%;
+}
+
+.under {
+    position: relative;/*相对*/
+    top: 30%;
+    width:99%;
+    height: 100%;
+    left:1%;
+    /*border-style: solid;*/
+    /*border-color: crimson;*/
+    /*border-width: thick;*/
+    /*background-color: blue;*/
+    /*overflow: auto;*/
+    /*overflow: scroll;*/
+}
+/*//清除 overflow: auto;的滚动条*/
+.under::-webkit-scrollbar{
+    display: none;
+}
+/**/
+.under .under-under{
+    position: relative;
+    width:100%;
+    height: 100%;
+    /*word-wrap:break-word;*/
+    /*word-break:break-all;*/
+    border-style:solid;
+    border-color: crimson;
+    border-width: thick;
+    /*background-color: aqua;*/
+    /*z-index: -100;*/
+    overflow: auto;
+    /*overflow: scroll;*/
+}
+/*.under-under::-webkit-scrollbar{*/
+/*    display: none;*/
+/*}*/
+
+.under .shops{
+    width: 150px;
+    height:300px;
+    float: left;
+    /*word-wrap:break-word;*/
+    /*word-break:break-all;*/
+    margin:20px 5px 20px 5px;
+    border-style:solid;
+    border-color:black;
+    border-width: thick;
+
+}
+.under .shops .img{
+    position: relative;
+    top: 2px;
+    left: 25px;
+    width:100px;
+    height:100px;
+    /*word-wrap:break-word;*/
+    /*word-break:break-all;*/
+}
+.under .shops .img img{
+    width: 100%;
+    height: 100%;
+}
+.under .shops .shops-mesg{
+    position:relative;
+    top: 55px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.under .shops .shops-mesg .goods_name{
+    position:relative;
+    /*top: 55px;*/
+    width: 140px;
+    height:20px;
+    font-size:10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: crimson;
+    white-space:nowrap;
+}
+.under .shops .shops-mesg .goods_detail_content,.under .shops .shops-mesg a{
+    position:relative;
+    width:100%;
+    height:20px;
+    font-size:5px;
+    text-overflow: ellipsis;
+/*//溢出省略*/
+    overflow: hidden;
+    white-space: nowrap;
+}
+.under .shops .shops-mesg .goods_name:hover
+{
+    text-overflow:inherit;
+    overflow:visible;
+}
