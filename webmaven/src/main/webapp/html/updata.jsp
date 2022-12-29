@@ -13,10 +13,10 @@
 </head>
 <body>
 <%
-DBhelp dbh=new DBhelp("../MySql.properties");
-String s = (String) session.getAttribute("username");
-TableBean tb=dbh.selectByUserName(s);
-session.setAttribute("id",tb.getId());
+    DBhelp dbh = new DBhelp("../MySql.properties");
+    String s = (String) session.getAttribute("username");
+    TableBean tb = dbh.selectByUserName(s);
+    session.setAttribute("id", tb.getId());
 %>
 <form action="../updata" method="post">
     <label>

@@ -22,22 +22,20 @@ public class SomBygoods_nameJSON extends HttpServlet {
         /**
          * 接收json
          //         */
-        JSONObject data= HttpGetJson.getJson(request);
-        String name="柳和";
-        if(data!=null) {
+        JSONObject data = HttpGetJson.getJson(request);
+        String name = "柳和";
+        if (data != null) {
             name = String.valueOf(data.get("names"));
             System.out.println(name);
         }
-            response.setCharacterEncoding("UTF-8");//响应编码类型
-            response.setContentType("text/json;charset=utf-8");
-            PrintWriter out = response.getWriter();
-            List<Goods_info_Bean> list = Goods_info_Dao.selectSomeByGoods_Name(name);
-            String jsonout = JSON.toJSONString(list);
-            out.write(jsonout);
-            out.flush();
-            out.close();
-
-
+        response.setCharacterEncoding("UTF-8");//响应编码类型
+        response.setContentType("text/json;charset=utf-8");
+        PrintWriter out = response.getWriter();
+        List<Goods_info_Bean> list = Goods_info_Dao.selectSomeByGoods_Name(name);
+        String jsonout = JSON.toJSONString(list);
+        out.write(jsonout);
+        out.flush();
+        out.close();
     }
 
     @Override

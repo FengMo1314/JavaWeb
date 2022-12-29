@@ -18,9 +18,16 @@
 <%
     AboutCookies cookies = new AboutCookies(request, response);
     String isLogin = cookies.getCookieForJSP("isLogin");
-    out.print("<h1>"+isLogin+"</h1>");
+    out.print("<h1>" + isLogin + "</h1>");
     String username = (String) session.getAttribute("username");
-    if ((username == null&&isLogin!="true")||isLogin!="true"||username == null) {
+    if ((username == null && isLogin != "true") || isLogin != "true" || username == null) {
+        if (username == null) {
+            out.print("<h1>与服务器会话失败请登录<h1>");
+            response.setHeader("refresh", "2;login.jsp");
+        } else {
+            out.print("<h1>本地没有登录信息——cookie不符合</h1>");
+            response.setHeader("refresh", "2;login.jsp");
+        }
 %>
 <h3>请登录
     <a href="./login.jsp">登录</a>
@@ -31,13 +38,14 @@
 <h3>
     <a href="../JSONindex.html">返回商品首页</a>
 </h3>
-<%} else{
+<%
+} else {
     String path;
-        if(request.getAttribute("select")==null) {
-             path= "../crootanduser";
-        }else {
-            path="./cselect";
-        }
+    if (request.getAttribute("select") == null) {
+        path = "../crootanduser";
+    } else {
+        path = "./cselect";
+    }
 %>
 <div>
     <form action="<%=path%>" method="post">
@@ -57,10 +65,10 @@
                 <th>用户id</th>
                 <th>用户名</th>
                 <th>密码</th>
-<%--                <th>修改</th>--%>
+                <%--                <th>修改</th>--%>
             </tr>
             <%
-                if (request.getAttribute("select")==null) {
+                if (request.getAttribute("select") == null) {
                     UserDao ud = new UserDao();
                     List<TableBeanCheng> tbc = ud.selectAllTableMesgs();
                     for (TableBeanCheng user : tbc) {
@@ -74,10 +82,11 @@
                 </td>
                 <td><%=user.getUsername()%>
                 </td>
-                <td><%=user.getPassword()%></td>
-<%--                <td>--%>
-<%--                    <button name="button" value="3">删除</button>--%>
-<%--                </td>--%>
+                <td><%=user.getPassword()%>
+                </td>
+                <%--                <td>--%>
+                <%--                    <button name="button" value="3">删除</button>--%>
+                <%--                </td>--%>
             </tr>
             <%
                 }

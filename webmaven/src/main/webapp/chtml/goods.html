@@ -15,8 +15,8 @@
 <script src="jquery.min.js"></script>
 <script src="../js/until.js"></script>
 <script>
-    if(getCookie("isLogin")!="true"){
-        window.location.href="login.jsp";
+    if (getCookie("isLogin") != "true") {
+        window.location.href = "login.jsp";
     }
     const bto = document.getElementById("button");
 
@@ -26,15 +26,15 @@
         bto.style.background = "blue";
         alert("点了" + "\n" + names)
         $.ajax({
-            url: 'http://localhost:8080/lh.com/SomBygoods_nameJSON',//请求地址
-            type: 'post',//请求方式
-            headers: {"Content-type": "application/json;charset=UTF-8"},
-            async: true,//是否异步
-            data: JSON.stringify({"names": names}),
-            contentType: "application/json",
-            dataType: "json",
-            success: function (res) {//请求成功回调函数
-                $.each(res, function (k, v) {
+                url: 'http://localhost:8080/lh.com/SomBygoods_nameJSON',//请求地址
+                type: 'post',//请求方式
+                headers: {"Content-type": "application/json;charset=UTF-8"},
+                async: true,//是否异步
+                data: JSON.stringify({"names": names}),
+                contentType: "application/json",
+                dataType: "json",
+                success: function (res) {//请求成功回调函数
+                    $.each(res, function (k, v) {
                         // console.log(k, v);
                         $('.box').append(
                             `<div class="shops">
@@ -50,13 +50,13 @@
                      </div>
                 `);
                     }),
-                    error(err)
-                {//请求失败回调函数
-                    console.log("dd");
-                    console.log(err);
-                }
-            },
-        }
+                        error(err)
+                    {//请求失败回调函数
+                        console.log("dd");
+                        console.log(err);
+                    }
+                },
+            }
         )
     }
 

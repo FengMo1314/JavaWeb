@@ -6,13 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="project02" />
         <module name="webmaven" />
         <module name="MyWeb" />
         <module name="chapter03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AB" target="17" />
       <module name="JavaWeb&amp;chen" target="17" />
+      <module name="web" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

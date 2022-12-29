@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/webmaven" />
+    <file type="web" url="file://$PROJECT_DIR$/../project02/project02" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -11,6 +12,8 @@
         <option value="$PROJECT_DIR$/chapter03/pom.xml" />
         <option value="$PROJECT_DIR$/JavaWeb&amp;chen/pom.xml" />
         <option value="$PROJECT_DIR$/MyWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/AB/pom.xml" />
+        <option value="$PROJECT_DIR$/../project02/project02/pom.xml" />
       </list>
     </option>
   </component>

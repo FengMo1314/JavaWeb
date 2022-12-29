@@ -23,12 +23,13 @@ public class AboutCookies {
         //遍历匹配
         for (int i = 0; i < arrcookie.length; i++) {
             String[] arr = arrcookie[i].split("=");
-            if (arr[0]==name) {
+            if (arr[0] == name) {
                 return arr[1];
             }
         }
         return "";
     }
+
     public String getCookieForJSP(String key) throws UnsupportedEncodingException {
         Cookie cookie = null;
         Cookie[] cookies = null;
@@ -44,53 +45,59 @@ public class AboutCookies {
         }
         return "";
     }
+
     // 打印所有cookie
-    public void printCookie(){
+    public void printCookie() {
         Cookie[] strcookie = request.getCookies();//获取cookie字符串
         String[] arrcookie = strcookie.toString().split(";");//分割
         //遍历匹配
         for (var i = 0; i < arrcookie.length; i++) {
             var arr = arrcookie[i].split("=");
-            String rest=arr[0]+":"+arr[1];
+            String rest = arr[0] + ":" + arr[1];
             System.out.println(rest);
         }
     }
+
     public String printCookieForJSP() throws UnsupportedEncodingException {
         Cookie cookie = null;
         Cookie[] cookies = null;
         // 获取cookies的数据,是一个数组
-        String html="";
+        String html = "";
         cookies = request.getCookies();
         if (cookies != null) {
-            html+="<h2> 查找 Cookie 名与值</h2>";
+            html += "<h2> 查找 Cookie 名与值</h2>";
             for (int i = 0; i < cookies.length; i++) {
                 cookie = cookies[i];
-                html+="参数名 : " + cookie.getName()+"<br>参数值: " + URLDecoder.decode(cookie.getValue(), StandardCharsets.UTF_8) +"<br>"+"------------------------------------<br>";
+                html += "参数名 : " + cookie.getName() + "<br>参数值: " + URLDecoder.decode(cookie.getValue(), StandardCharsets.UTF_8) + "<br>" + "------------------------------------<br>";
             }
         }
         return html;
     }
-    public  void setCoookie(String key,String value){
-        Cookie cookie=new Cookie(key,value);
+
+    public void setCoookie(String key, String value) {
+        Cookie cookie = new Cookie(key, value);
         cookie.setMaxAge(10000);
         response.addCookie(cookie);
     }
-    public void setCookies(String[] keys,String[] values){
-        for (int i = 0; i < keys.length ; i++) {
-            setCoookie(keys[i],values[i]);
+
+    public void setCookies(String[] keys, String[] values) {
+        for (int i = 0; i < keys.length; i++) {
+            setCoookie(keys[i], values[i]);
         }
     }
-    public void dellAllCookies(){
-        Cookie[] cookies=request.getCookies();
-        for(Cookie cookie:cookies){
+
+    public void dellAllCookies() {
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
             cookie.setMaxAge(0);
             cookie.setPath("/lh.com");
             response.addCookie(cookie);
-            System.out.println("dd"+cookie);
+            System.out.println("dd" + cookie);
         }
     }
-    public void dellCookiesByKey(String key){
-        Cookie newCookie=new Cookie(key,null); //假如要删除名称为username的Cookie
+
+    public void dellCookiesByKey(String key) {
+        Cookie newCookie = new Cookie(key, null); //假如要删除名称为username的Cookie
 
         newCookie.setMaxAge(0); //立即删除型
 

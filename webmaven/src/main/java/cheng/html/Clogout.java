@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Clogout extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        AboutCookies cookies=new AboutCookies(request,response);
+        AboutCookies cookies = new AboutCookies(request, response);
         cookies.dellAllCookies();
 //        System.out.println("SSSSSSS");
         request.getSession().removeAttribute("username");

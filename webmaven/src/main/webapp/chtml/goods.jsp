@@ -14,12 +14,18 @@
 </head>
 <body>
 <%
+    String username = (String) session.getAttribute("username");
     AboutCookies cookies = new AboutCookies(request, response);
     String isLogin = cookies.getCookieForJSP("isLogin");
-    out.print("<h1>"+isLogin+"</h1>");
-    if (isLogin!="true") {
-        out.print("<h1>未登录</h1>");
-        response.setHeader("refresh", "1;login.jsp");
+    out.print("<h1>" + isLogin + "</h1>");
+    if ((username == null && isLogin != "true") || isLogin != "true" || username == null) {
+        if (username == null) {
+            out.print("<h1>与服务器会话失败请登录<h1>");
+            response.setHeader("refresh", "2;login.jsp");
+        } else {
+            out.print("<h1>本地没有登录信息——cookie不符合</h1>");
+            response.setHeader("refresh", "2;login.jsp");
+        }
     } else {
 %>
 <form action="goods.jsp" method="post">

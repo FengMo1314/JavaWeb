@@ -9,11 +9,11 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
 public class HttpGetJson {
-    public static JSONObject getJson(HttpServletRequest request){
+    public static JSONObject getJson(HttpServletRequest request) {
         String result = "";
         BufferedReader in = null;
         try {
-            in= new BufferedReader(new InputStreamReader(
+            in = new BufferedReader(new InputStreamReader(
                     request.getInputStream(), StandardCharsets.UTF_8));
             String line;
             while ((line = in.readLine()) != null) {

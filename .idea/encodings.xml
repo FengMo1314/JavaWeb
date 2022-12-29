@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/AB/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AB/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MyWeb/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/MyWeb/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter03/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter03/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webmaven/src/main/java/cheng/IMG/upload_3a3286e0_b707_4d03_b1b7_656af95954c4_00000001.tmp" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/../project02/project02/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../project02/project02/src/main/resources" charset="UTF-8" />
   </component>
 </project>

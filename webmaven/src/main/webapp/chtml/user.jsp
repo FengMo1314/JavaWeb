@@ -15,20 +15,24 @@
 <%
     AboutCookies cookies = new AboutCookies(request, response);
     String isLogin = cookies.getCookieForJSP("isLogin");
-    out.print("<h1>"+isLogin+"</h1>");
-    if (isLogin!="true") {
+    out.print("<h1>" + isLogin + "</h1>");
+    if (!isLogin.equals("true")) {
 %>
 <h1>未登录</h1>
 <h3>
-    <a href="./login.jsp">登录</a>
+    <a href="./login.jsp">登录jsp</a>
 </h3>
 <h3>
-    <a href="../cindex.jsp">返回课堂首页</a>
+    <a href="./login.html">登录html</a>
 </h3>
+<h3>
+    <a href="../cindex.jsp">返回课堂首页jsp</a>
+</h3>
+
 <h3>
     <a href="../JSONindex.html">返回商品首页</a>
 </h3>
-<%}else{%>
+<%} else {%>
 <div>
     <h1>欢迎${username}来到您的个人中心</h1>
     <h3>

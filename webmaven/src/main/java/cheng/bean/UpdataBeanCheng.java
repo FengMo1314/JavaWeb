@@ -3,7 +3,7 @@ package cheng.bean;
 public class UpdataBeanCheng {
     private String username;
     private String password;
-private int id;
+    private int id;
 
     public UpdataBeanCheng(String username, String password, int id) {
         this.username = username;

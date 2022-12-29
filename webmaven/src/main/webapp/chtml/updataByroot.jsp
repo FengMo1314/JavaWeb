@@ -31,7 +31,7 @@
             </tr>
             <%
                 List<TableBeanCheng> tbclist = (List<TableBeanCheng>) request.getAttribute("tableList");
-                session.setAttribute("TableBeanCheng",tbclist);
+                session.setAttribute("TableBeanCheng", tbclist);
                 for (TableBeanCheng tbc : tbclist) {
             %>
             <tr>

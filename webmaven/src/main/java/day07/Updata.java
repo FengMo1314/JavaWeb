@@ -18,7 +18,7 @@ public class Updata extends HttpServlet {
         response.setContentType("text/html; charset=UTF-8");
         PrintWriter out = response.getWriter();
         HttpSession session = request.getSession();
-        int id= (int) session.getAttribute("id");
+        int id = (int) session.getAttribute("id");
 //        int id= Integer.parseInt(request.getParameter("ids"));
         String uId = request.getParameter("uid");
         String userName = request.getParameter("username");
@@ -26,11 +26,11 @@ public class Updata extends HttpServlet {
         String pass2 = request.getParameter("pass2");
         String email = request.getParameter("email");
         Date birthday = Date.valueOf(request.getParameter("birthday"));
-        UpdataBean ub=new UpdataBean(uId,userName,pass2,email,birthday);
-        IsTrue it=new IsTrue();
-        if(it.isUpdata(id,ub)){
+        UpdataBean ub = new UpdataBean(uId, userName, pass2, email, birthday);
+        IsTrue it = new IsTrue();
+        if (it.isUpdata(id, ub)) {
             out.println("修改成功");
-        }else{
+        } else {
             out.println("出错了");
         }
 
@@ -38,6 +38,6 @@ public class Updata extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-     this.doGet(request,response);
+        this.doGet(request, response);
     }
 }

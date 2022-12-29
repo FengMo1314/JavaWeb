@@ -22,10 +22,10 @@ public class Regist extends HttpServlet {
             out.println("注册成功！马上跳转登录");
             response.setHeader("refresh", "1;./html/login.html");
         } else if (is == 0) {
-            out.println("已经存在是否登录？<div><a href=\"./html/login.html\">登录</a></div><div><a href=\"./html/regist.html\">继续注册</a></div>");
+            out.println("已经存在是否登录？<div><a href=\"./html/login.html\">登录</a></div><div><a href=\"./html/regists.html\">继续注册</a></div>");
         } else {
             out.println("登录名或者密码不能为空！请重新输入注册信息");
-            response.setHeader("refresh", "1;./html/regist.html");
+            response.setHeader("refresh", "1;./html/regists.html");
         }
 
     }

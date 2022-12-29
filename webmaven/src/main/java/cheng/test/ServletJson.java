@@ -20,7 +20,7 @@ import java.util.Map;
 //import com.alibaba.fastjson.JSONPath;
 
 
-@WebServlet(name = "ServletJson",value = "/demojson")
+@WebServlet(name = "ServletJson", value = "/demojson")
 public class ServletJson extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("demojson doPost...");
@@ -48,8 +48,8 @@ public class ServletJson extends HttpServlet {
         response.setContentType("text/json;charset=utf-8");
 //        String numA = request.getParameter("numA");
 //        String numB = request.getParameter("numB");
-        String numA="15";
-        String numB="20";
+        String numA = "15";
+        String numB = "20";
         Float fnumA = Float.parseFloat(numA);
         Float fnumB = Float.parseFloat(numB);
         Float sum, minus, multiply, divide;
@@ -62,12 +62,12 @@ public class ServletJson extends HttpServlet {
         String ssum = df.format(sum);
         String smultiply = df.format(multiply);
         String sdivide = df.format(divide);
-        Map<String,Object> map = new HashMap<String,Object>();
-        map.put("sum",ssum);
-        map.put("minus",sminus);
-        map.put("multiply",smultiply);
-        map.put("divide",sdivide);
-        System.out.println("MapTest:"+map);
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("sum", ssum);
+        map.put("minus", sminus);
+        map.put("multiply", smultiply);
+        map.put("divide", sdivide);
+        System.out.println("MapTest:" + map);
         JSONObject json = JSONObject.parseObject(JSON.toJSONString(map));//把map转为json数据
         PrintWriter out = response.getWriter();
         out.write(json.toString());

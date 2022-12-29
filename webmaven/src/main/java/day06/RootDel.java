@@ -22,10 +22,11 @@ public class RootDel extends HttpServlet {
         if (usermesgs != null) {//选择列表不为空
             switch (buttons[0]) {
                 case "1": //添加
-                        out.println("添加功能正在实现中");
-                        break;
-                case "2": out.println("修改还是遥遥无期");
-                          break;
+                    out.println("添加功能正在实现中");
+                    break;
+                case "2":
+                    out.println("修改还是遥遥无期");
+                    break;
                 case "3":  //删除
                     if (it.isDellMore(usermesgs)) {
                         out.println("删除成功");
@@ -35,7 +36,8 @@ public class RootDel extends HttpServlet {
                         break;
                     }
 
-                default: out.println("参数错误");
+                default:
+                    out.println("参数错误");
             }
             response.setHeader("refresh", "1;./html/root&user.jsp");
         } else {

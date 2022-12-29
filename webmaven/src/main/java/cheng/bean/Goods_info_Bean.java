@@ -19,6 +19,7 @@ public class Goods_info_Bean {
     private Date create_time;
     private int update_user;
     private Date update_time;
+
     public Date getUpdate_time() {
         return update_time;
     }
@@ -52,6 +53,7 @@ public class Goods_info_Bean {
         this.update_user = update_user;
         this.update_time = update_time;
     }
+
     public int getGoods_id() {
         return goods_id;
     }

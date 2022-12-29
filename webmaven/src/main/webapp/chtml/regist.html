@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <style>
+        img {
+            width: 10%;
+            height: 10%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <form enctype="multipart/form-data" method="post">
+        <input id="img" name="file" ref size="50" type="file"/>
+        <button onclick="upimg()" type="button">上传头像</button>
+    </form>
+</div>
+<div class="box-img">
+</div>
+<!--<img src="../userUpdata/2022-8月-建档立卡.jpg" alt="" sizes="" srcset="">-->
+<!--<form action="/ServletUpload" method="post" enctype="multipart/form-data">-->
+<!--    <input type="file" name="file" size="50"/>-->
+<!--    <br/>-->
+<!--    <input type="submit" value="Upload File"/>-->
+<!--</form>-->
+<div class="box2">
+    <form action="#" method="post">
+        <input class="username" placeholder="请输入用户名" type="text">
+        <br>
+        <input class="password" placeholder="请输入密码" type="password">
+        <br>
+        <input id="sub" onclick="register()" type="button" value="注册">
+    </form>
+</div>
+<h1 class="mesg"></h1>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/until.js"></script>
+<script>
+    // $(function(){
+    //     pushHistory();
+    //     window.addEventListener("popstate", function(e) {
+    //         alert("我监听到了浏览器的返回按钮事件啦");//根据自己的需求实现自己的功能
+    //     }, false);
+    //     function pushHistory() {
+    //         var state = {
+    //             title: "title",
+    //             url: "#"
+    //         };
+    //         window.history.pushState(state, "title", "#");
+    //     }
+    // });
+    // function mains() {
+    //     register()
+    //     // let isPath=upimg.value;
+    //     // let imgPath=upimg.value;
+    //     // if (imgPath === "" || isPath ===false) {
+    //     //     $(".mesg").html("不要头像😢");
+    //     //     register(isPath);
+    //     // } else {
+    //     //     $(".mesg").append("没有头像");
+    //     //     $(".box").html("专心注册")
+    //     // }
+    // }
+
+    function register() {
+        let isPath = upimg();
+        const username = $(".username").val();
+        const password = $(".password").val();
+        if (username.length <= 0 || password.length <= 0) {
+            $(".mesg").html("<h2>账户或者密码不能为空</h2>");
+        } else {
+            $.ajax({
+                url: 'http://localhost:8080/lh.com/cregistAll',//请求地址
+                type: 'post',//请求方式
+                headers: {"Content-type": "application/json;charset=UTF-8"},
+                async: true,//是否异步
+                data: JSON.stringify({
+                    "username": username,
+                    "password": password,
+                    "isPath": isPath
+                }),
+                // JSON.stringify({"names": names}),
+                contentType: "application/json",
+                dataType: "json",
+                success: function (res) {//请求成功回调函数
+                    console.log(res["state"])
+                    let html = "";
+                    switch (res["state"]) {
+                        case "err":
+                            html += `<h2>${res["mesg"]}</h2>`;
+                            break;
+                        case "-1":
+                            html += `<h2>${res["mesg"]}</h2>
+                                    <a href="../JSONindex.html">返回首页</a>
+                                    <a href="user.jsp">用户中心</a>
+                                   `;
+                            break;
+                        case "0":
+                            html += `<h2>${res["mesg"]}</h2>
+                                  <a href="login.html">去登陆</a>`;
+                            // window.location.replace("/lh.com");
+                            break;
+                        case "1":
+                            html += `<h2>${res["mesg"]}</h2>
+                                  <a href="login.html">去登陆</a>
+                                    <a href="#">忘记密码</a>
+                                     `;
+                            break;
+                    }
+                    $(".mesg").html(html);
+                },
+                error(err) {//请求失败回调函数
+                    alert(err)
+                }
+            })
+        }
+    }
+
+
+    function upimg() {
+        let imgPath = "";
+        let isPath = true;
+        const imgs = document.getElementById("img");
+        if (!imgs.files || imgs.files.length <= 0) {
+            alert("NOJPG")
+            return isPath = false;
+        } else {
+            const formData = new FormData();//新建一个formdata用于存储数据
+            formData.append("userPatn", imgs.files[0]);
+            // // var json= JSON.stringify({"img":formData})
+            console.log("json:", formData)
+            $.ajax({
+                    url: 'http://localhost:8080/lh.com/userUpdata',//请求地址
+                    type: 'post',//请求方式
+                    // headers: {"Content-type": "application/json;charset=UTF-8"},
+                    async: false,//是否异步
+                    data: formData,
+                    dataType: 'json',
+                    processData: false, // 告诉jQuery不要去处理发送的数据
+                    contentType: false, // 告诉jQuery不要去设置Content-Type请求头
+                    success: function (res) {//请求成功回调函数
+                        console.log(res)
+
+                        if (res["imgPath"] == "" || res["isPath"] == "false") {
+                            isPath = res["isPath"];
+                            $(".mesg").html(`
+                            <h1>请上传有效的文件奥</h1>
+                            `)
+                        } else {
+                            imgPath = res['imgPath'];
+                            $(".mesg").html(`
+                            <h1>上传成功</h1>
+                            `)
+                            $(".box").html("");
+                            $(".box-img").append(`
+                                 <img src="../${res["imgPath"]}" id="newImg">
+                                `)
+                        }
+                    },
+                    error(err) {//请求失败回调函数
+                        console.log("是阿拜");
+                        console.log(err);
+                    }
+                }
+            )
+        }
+        return {isPath, imgPath};
+    }
+</script>
+</html>

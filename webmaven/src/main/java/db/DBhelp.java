@@ -88,7 +88,7 @@ public class DBhelp {
         try {
             stmt = conn.createStatement();
             int num = stmt.executeUpdate(sql);
-            if(num>0){
+            if (num > 0) {
                 System.out.println("OK");
             }
         } catch (SQLException e) {
@@ -242,12 +242,12 @@ public class DBhelp {
                 do {
                     // 通过字段检索
                     int id = rs.getInt("id");
-                    String uid=rs.getString("uid");
+                    String uid = rs.getString("uid");
                     String name = rs.getString("username");
                     String pass = rs.getString("password");
-                    String email=rs.getString("email");
-                    Date birthday=rs.getDate("birthday");
-                    tb = new TableBean(id,uid, name, pass,email,birthday);
+                    String email = rs.getString("email");
+                    Date birthday = rs.getDate("birthday");
+                    tb = new TableBean(id, uid, name, pass, email, birthday);
                 }
                 while (rs.next());
             }
@@ -282,14 +282,15 @@ public class DBhelp {
         }
         return num > 0;
     }
-    public boolean dellMoreById(String id){
+
+    public boolean dellMoreById(String id) {
 //        String[] sqls = new String[2];
 //        sqls[0] = "alter table myuser drop id;";
 //        sqls[1] = "alter TABLE myuser add id int primary key auto_increment FIRST;";
-        String mesgs="";
+        String mesgs = "";
 
         System.out.println(mesgs);
-        String sql = "DELETE FROM myuser WHERE id="+id+";";
+        String sql = "DELETE FROM myuser WHERE id=" + id + ";";
         int num;
         try {
             stmt = conn.createStatement();
@@ -307,8 +308,9 @@ public class DBhelp {
         }
         return num > 0;
     }
-    public boolean updataById(int id,UpdataBean ub){
-        String sql = "UPDATE myuser SET uid='"+ub.getUid()+"',username='"+ub.getUsername()+"',password='"+ub.getPassword()+"',email='"+ub.getEmail()+"',birthday='"+ub.getBirthday()+"' WHERE id="+id+";" ;
+
+    public boolean updataById(int id, UpdataBean ub) {
+        String sql = "UPDATE myuser SET uid='" + ub.getUid() + "',username='" + ub.getUsername() + "',password='" + ub.getPassword() + "',email='" + ub.getEmail() + "',birthday='" + ub.getBirthday() + "' WHERE id=" + id + ";";
         int num;
         try {
             stmt = conn.createStatement();
@@ -316,6 +318,6 @@ public class DBhelp {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return num>0;
+        return num > 0;
     }
 }

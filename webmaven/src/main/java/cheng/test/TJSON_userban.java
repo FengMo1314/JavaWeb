@@ -16,16 +16,16 @@ public class TJSON_userban extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/json;charset=utf-8");
-        List<Goods_info_Bean> list=Goods_info_Dao.selectAll();
-        PrintWriter out=response.getWriter();
-            String json = JSON.toJSONString(list);
-            out.write(json);
+        List<Goods_info_Bean> list = Goods_info_Dao.selectAll();
+        PrintWriter out = response.getWriter();
+        String json = JSON.toJSONString(list);
+        out.write(json);
         out.flush();
         out.close();
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-this.doGet(request,response);
+        this.doGet(request, response);
     }
 }

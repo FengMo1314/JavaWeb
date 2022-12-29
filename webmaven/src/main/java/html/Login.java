@@ -23,7 +23,7 @@ public class Login extends HttpServlet {
         int is = it.isLogin(name, pass);
         if (is == -1) {
             out.println("您还没有注册！马上安排");
-            response.setHeader("refresh", "1;./html/regist.html");
+            response.setHeader("refresh", "1;./html/regists.html");
         } else if (is == 0) {
             out.println("登录成功！");
             HttpSession session = request.getSession();

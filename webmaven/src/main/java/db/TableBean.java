@@ -46,6 +46,7 @@ public class TableBean implements Serializable {
         this.email = email;
         this.birthday = birthday;
     }
+
     public TableBean(int id, String uid, String username, String password, String email, Date birthday) {
         this.id = id;
         this.uid = uid;
@@ -58,7 +59,6 @@ public class TableBean implements Serializable {
     public Date getBirthday() {
         return birthday;
     }
-
 
 
     public void setBirthday(Date birthday) {

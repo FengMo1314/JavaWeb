@@ -18,20 +18,20 @@ public class Cregist extends HttpServlet {
         PrintWriter out = response.getWriter();
         String name = request.getParameter("username");
         String pass = request.getParameter("password");
-        List isList=cit.isRegist(name,pass);
-        if(isList.get(0).equals("-1")){//之策成功
+        List isList = cit.isRegist(name, pass);
+        if (isList.get(0).equals("-1")) {//注册成功
             out.println(isList.get(1));
             response.setHeader("refresh", "1;./chtml/login.jsp");
         } else if (isList.get(0).equals("0")) {
             out.println(isList.get(1));
 
-        }else{
+        } else {
             out.println(isList.get(1));
         }
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-this.doGet(request,response);
+        this.doGet(request, response);
     }
 }

@@ -46,19 +46,21 @@ public class IsTrue {
     public boolean isNull(String name, String pass) {
         return name.equals("") || pass.equals("");
     }
-    public boolean isDellMore(String[] idarrys){
-        boolean[] is=new boolean[idarrys.length];
+
+    public boolean isDellMore(String[] idarrys) {
+        boolean[] is = new boolean[idarrys.length];
         for (int i = 0; i < idarrys.length; i++) {
             is[i] = dbh.dellMoreById(idarrys[i]);
         }
-        for (int i = 0; i <is.length ; i++) {
-            if (!is[i]){
+        for (int i = 0; i < is.length; i++) {
+            if (!is[i]) {
                 return false;
             }
         }
-       return true;
+        return true;
     }
-    public boolean isUpdata(int id, UpdataBean ub){
+
+    public boolean isUpdata(int id, UpdataBean ub) {
         return dbh.updataById(id, ub);
     }
 }
