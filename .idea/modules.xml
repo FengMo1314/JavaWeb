@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb&amp;chen/bin/JavaWeb&amp;chen.iml" filepath="$PROJECT_DIR$/JavaWeb&amp;chen/bin/JavaWeb&amp;chen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webmaven/webmaven.iml" filepath="$PROJECT_DIR$/webmaven/webmaven.iml" />
+    </modules>
+  </component>
+</project>

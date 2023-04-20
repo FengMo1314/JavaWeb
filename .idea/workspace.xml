@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.19090909" />
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="webmaven:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e16bc7b4-9de5-48e4-b00e-7fee27ba678b" name="变更" comment="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit3 Test Class" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="柳和" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\MyMaven\Repository" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\MyMaven\CustomInstallation\apache-maven-3.9.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2IIVMlV5RwMUUtk2sLQFjGrTavr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Downloaded.Files.Path&quot;: &quot;D:\\MyProgrammingLanguagesWorkspace\\MavenSettings&amp;&amp;ku\\yilai&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;所有位置&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MyProgrammingLanguagesWorkspace/JavaWeb&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.29617575&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.29561672&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\java\com\ccit\web" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\webapp" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\webapp\js" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\webapp\css" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\java\com\ccit\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\webapp\js" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\project02\project02\src\main\webapp\css" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\JavaWeb\webmaven\src\main\resources" />
+      <recent name="D:\MyProgrammingLanguagesWorkspace\JavaWeb\webmaven\src\main\webapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="html" />
+      <recent name="db" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ccit.service" />
+      <recent name="com.ccit.bean" />
+      <recent name="org.example.DB" />
+      <recent name="cheng.html" />
+      <recent name="cheng.isTrue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.com.ccit.dao.GoodsDao">
+    <configuration name="DruidConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ccit.DB.DruidConnect" />
+      <module name="project02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ccit.DB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.dao.GoodsDao" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Goods_info_Dao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cheng.db.Goods_info_Dao" />
+      <module name="webmaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cheng.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ccit.dao.GoodsDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ccit.dao.GoodsDao" />
+      <module name="project02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ccit.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.example.DB.DruidConnect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.DB.DruidConnect" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.DB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="tomcat7:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/webmaven" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="webmaven [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/webmaven" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.webmaven [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run]" />
+      <item itemvalue="应用程序.com.ccit.dao.GoodsDao" />
+      <item itemvalue="应用程序.GoodsDao" />
+      <item itemvalue="应用程序.org.example.DB.DruidConnect" />
+      <item itemvalue="应用程序.DruidConnect" />
+      <item itemvalue="应用程序.Goods_info_Dao" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.com.ccit.dao.GoodsDao" />
+        <item itemvalue="应用程序.org.example.DB.DruidConnect" />
+        <item itemvalue="应用程序.Goods_info_Dao" />
+        <item itemvalue="应用程序.GoodsDao" />
+        <item itemvalue="应用程序.DruidConnect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e16bc7b4-9de5-48e4-b00e-7fee27ba678b" name="变更" comment="" />
+      <created>1669869043097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669869043097</updated>
+      <workItem from="1669869046065" duration="47000" />
+      <workItem from="1669941287518" duration="2247000" />
+      <workItem from="1669943551405" duration="11834000" />
+      <workItem from="1669959065432" duration="5214000" />
+      <workItem from="1669966082969" duration="5195000" />
+      <workItem from="1669975848684" duration="758000" />
+      <workItem from="1670054216388" duration="1782000" />
+      <workItem from="1670058883969" duration="1305000" />
+      <workItem from="1670129066606" duration="15929000" />
+      <workItem from="1670145989958" duration="64000" />
+      <workItem from="1670151694353" duration="8171000" />
+      <workItem from="1670161668242" duration="2706000" />
+      <workItem from="1670301665968" duration="11884000" />
+      <workItem from="1670315724241" duration="3183000" />
+      <workItem from="1670329061701" duration="1212000" />
+      <workItem from="1670332945816" duration="33000" />
+      <workItem from="1670333084581" duration="6302000" />
+      <workItem from="1670339453444" duration="939000" />
+      <workItem from="1670458579911" duration="23578000" />
+      <workItem from="1670508600574" duration="3530000" />
+      <workItem from="1670753798727" duration="1482000" />
+      <workItem from="1670755313954" duration="243000" />
+      <workItem from="1670755702925" duration="3704000" />
+      <workItem from="1670759647256" duration="802000" />
+      <workItem from="1670770417746" duration="241000" />
+      <workItem from="1670770692715" duration="17000" />
+      <workItem from="1670770818043" duration="7994000" />
+      <workItem from="1670890277224" duration="387000" />
+      <workItem from="1670890724755" duration="14912000" />
+      <workItem from="1670933351224" duration="21410000" />
+      <workItem from="1670980852815" duration="12907000" />
+      <workItem from="1671032078333" duration="6865000" />
+      <workItem from="1671063944419" duration="39900000" />
+      <workItem from="1671109521413" duration="16224000" />
+      <workItem from="1671126096121" duration="2739000" />
+      <workItem from="1671162358197" duration="749000" />
+      <workItem from="1671164057987" duration="30377000" />
+      <workItem from="1671198218063" duration="21434000" />
+      <workItem from="1671248516649" duration="5766000" />
+      <workItem from="1671254314820" duration="34766000" />
+      <workItem from="1671339575428" duration="41552000" />
+      <workItem from="1671425672887" duration="54973000" />
+      <workItem from="1671497487945" duration="39889000" />
+      <workItem from="1671549892289" duration="3299000" />
+      <workItem from="1671553387831" duration="7349000" />
+      <workItem from="1671582131168" duration="10428000" />
+      <workItem from="1671595215439" duration="5032000" />
+      <workItem from="1671600491264" duration="769000" />
+      <workItem from="1671602619124" duration="931000" />
+      <workItem from="1671603631179" duration="317000" />
+      <workItem from="1671606730434" duration="31964000" />
+      <workItem from="1671654836448" duration="14480000" />
+      <workItem from="1671669486310" duration="5153000" />
+      <workItem from="1671795635687" duration="3992000" />
+      <workItem from="1671852474979" duration="1762000" />
+      <workItem from="1671884658613" duration="9674000" />
+      <workItem from="1671937338568" duration="2933000" />
+      <workItem from="1672293988096" duration="1261000" />
+      <workItem from="1672372046301" duration="225000" />
+      <workItem from="1680164866006" duration="2561000" />
+      <workItem from="1680190096631" duration="1527000" />
+      <workItem from="1682006512919" duration="1866000" />
+      <workItem from="1682009588982" duration="296000" />
+      <workItem from="1682009928984" duration="105000" />
+    </task>
+    <task id="LOCAL-00001" summary="mawen">
+      <created>1670755090558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670755090558</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mawen">
+      <created>1671603510703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671603510703</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mawen">
+      <created>1682007432355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682007432355</updated>
+    </task>
+    <task id="LOCAL-00004" summary="mawen">
+      <created>1682008135155</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682008135155</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;">
+      <created>1682008900685</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682008900685</updated>
+    </task>
+    <task id="LOCAL-00006" summary="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;">
+      <created>1682009090485</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682009090485</updated>
+    </task>
+    <task id="LOCAL-00007" summary="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;">
+      <created>1682009447715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682009447715</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/web-maven" />
+      <path value="$PROJECT_DIR$/webmaven" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="mawen" />
+    <MESSAGE value="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="mawen&#10;&#10;Signed-off-by: FengMo &lt;360822587@qq.com&gt;" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

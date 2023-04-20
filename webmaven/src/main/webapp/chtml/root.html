@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+</head>
+<body>
+<form method="post">
+    <div class="select">
+        <input class="text" id="text" type="text" value="">
+        <button class="button" value="1"><label for="text">查询</label></button>
+        <button class="button" value="2">修改</button>
+        <button class="button" value="3">删除</button>
+    </div>
+    <table class="box">
+        <colgroup>
+            <col span="1" style="background-color:olivedrab">
+            <col span="5" style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <th>\</th>
+            <th>用户id</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th class="caozuo">
+                <label>操作</label>
+            </th>
+        </tr>
+
+        <!--    <tr>-->
+        <!--      <td><%=user.getId()%></td>-->
+        <!--      <td><%=user.getUsername()%></td>-->
+        <!--      <td><%=user.getPassword()%></td>-->
+        <!--    </tr>-->
+    </table>
+</form>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/until.js"></script>
+<script>
+    var html = "";
+    no()
+    $(".select").on('click', function (event) {
+        var clickedButtonDOM = event.target; //获取按钮的DOM元素
+        return value = clickedButtonDOM.getAttribute('value');//获取指定的元素
+        yes();
+
+    });
+
+    function yes() {
+        var butvalue = getAttributeValueByClassName("select", "value");
+        $.ajax({
+                url: 'http://localhost:8080/lh.com/crootanduser/',//请求地址
+                type: 'post',//请求方式
+                headers: {"Content-type": "application/json;charset=UTF-8"},
+                async: true,//是否异步
+                data: {
+                    "butvalue": butvalue,
+                },
+                contentType: "application/json",
+                dataType: "json",
+                success: function (res) {//请求成功回调函数
+                    console.log(res)
+                    $.each(res, function (k, v) {
+                        var chond = document.createElement("tr")
+                        // console.log(k, v);
+                        // $('.under-under')[0].innerHTML=(
+                        html = getUser(k, v);
+                        chond.innerHTML = html;
+                        $(".box").append(chond);
+                    })
+
+                },
+                error(err) {//请求失败回调函数
+                    console.log("dd");
+                    console.log(err);
+                }
+            }
+        )
+
+    }
+
+    function no() {
+        $.ajax({
+                url: 'http://localhost:8080/lh.com/alluser',//请求地址
+                type: 'post',//请求方式
+                headers: {"Content-type": "application/json;charset=UTF-8"},
+                async: true,//是否异步
+                data: {},
+                contentType: "application/json",
+                dataType: "json",
+                success: function (res) {//请求成功回调函数
+                    console.log(res)
+                    $.each(res, function (k, v) {
+                        var chond = document.createElement("tr")
+                        html = getUser(k, v);
+                        chond.innerHTML = html;
+                        $(".box").append(chond);
+                    })
+
+                },
+                error(err) {//请求失败回调函数
+                    console.log("dd");
+                    console.log(err);
+                }
+            }
+        )
+    }
+</script>
+</body>
+</html>

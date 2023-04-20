@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="D:\MyProgrammingLanguagesWorkspace\JavaWeb\webmaven\src\main\resources\favicon.ico" icon=""
+          rel="shortcut"
+          type="image/x-icon"/>
+    <link href="./other/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/JSONindex.css">
+    <style>
+        .swiper {
+            border-radius: 10px;
+            border-style: solid;
+            border-color: crimson;
+            /*border-width: thick;*/
+            width: 800px;
+            height: 400px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper .swiper-button-next, .swiper .swiper-button-prev {
+            height: 50px;
+            width: 50px;
+            color: white;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--  -->
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="left">
+                    <div class="left-left">
+                        <!--        <a onclick="shuaxin()"></a>-->
+                        <!--&lt;!&ndash;        <a href="./html/login.html" target='myIframe'>点我去li1页面</a>&ndash;&gt;-->
+                        <!--        <iframe src="cindex.jsp"  id='myIframe' name='myIframe' ></iframe>-->
+
+                        <h2>
+                            <a href="chtml/login.jsp">登录jsp</a>
+                        </h2>
+                        <h2>
+                            <a href="chtml/login.html">登录html</a>
+                        </h2>
+                        <h2>
+                            <a href="chtml/regist.jsp">注册jsp</a>
+                        </h2>
+                        <h2>
+                            <a href="chtml/regist.html">注册html</a>
+                        </h2>
+                        <h2>
+                            <a href="SomBygoods_nameJSON">SomeGoods_info_JSON</a>
+                        </h2>
+                        <h2>
+                            <a href="tjson_user">goodsJSON</a>
+                        </h2>
+                        <h2>
+                            <a href="./chtml/goods.jsp">shopsJSP</a>
+                        </h2>
+                        <h2>
+                            <a href="./chtml/goods.html">shopsHTML</a>
+                        </h2>
+                        <h2>
+                            <a href="chtml/user.jsp">用户中心jsp</a>
+                        </h2>
+                        <h2>
+                            <a href="chtml/root.jsp">管理用户中心jsp</a>
+                        </h2>
+                        <h2>
+                            <a href="./clogout">退出登录</a>
+                        </h2>
+                        <h2>
+                            <a href="./html/Cookie.html">Cookiehtml</a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.youpin.mi-img.com/ferriswheel/2ea8df6d_5077_42d4_b8ae_1a8c5f6ac8d3.jpeg@base@tag=imgScale&F=webp&h=1228&q=90&w=2560">
+            </div>
+            <div class="swiper-slide">
+                <img alt=""
+                     src="https://consumer.huawei.com/content/dam/huawei-cbg-site/cn/mkt/plp/launch/220906/phones/huawei-mate-xs2.png">
+            </div>
+            <div class="swiper-slide">
+                <img alt=""
+                     src="https://ts4.cn.mm.bing.net/th?id=OSC.TOOL3C25B9799A78864DF222B93658E9CC714CC6767D25CF4DCDD61185CEA73312FC&w=2000&h=510&o=6&dpr=1.5&pid=Orion">
+            </div>
+
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-next swiper-button-white"></div> <!-- 白色 -->
+            <div class="swiper-button-next swiper-button-black"></div> <!-- 黑色 -->
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <div class="app">
+        <!--  -->
+
+        <div class="box">
+            <div class="top">
+                <div class="top-select">
+                    <form action="#" method="get">
+                        <input id="names" type="text">
+                        <button class="but" onclick="clicked()">
+                            <a>搜</a>
+                            <a>索</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="under">
+                <div class="under-under"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./other/swiper/swiper-bundle.min.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/JSONindex.js"></script>
+<script>
+    <!--缩略图-->
+    var thumbsSwiper = new Swiper('#thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        watchSlidesVisibility: true,/*避免出现bug*/
+    })
+    var gallerySwiper = new Swiper('#gallery', {
+        spaceBetween: 10,
+        thumbs: {
+            swiper: {
+                el: '#thumbs',
+                spaceBetween: 10,
+                slidesPerView: 4,
+                watchSlidesVisibility: true,/*避免出现bug*/
+            },
+        }
+    })
+    var mySwiper = new Swiper('.swiper', {
+        loop: true, // 循环模式选项
+        autoplay: true,//自动
+        freeMode: true,//
+        mousewheel: true,
+        fadeEffect: {
+            crossFade: true,
+        },
+        // effect : 'coverflow',
+        // slidesPerView: 3,
+        // centeredSlides: true,
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows: true
+        },
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+</script>
+</body>
+</html>
